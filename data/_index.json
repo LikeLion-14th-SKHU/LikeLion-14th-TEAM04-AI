@@ -1,0 +1,219 @@
+[
+  {
+    "file": "bag/aren-beige-black.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-beige-black",
+    "color": "베이지/블랙",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어"
+  },
+  {
+    "file": "bag/aren-black-and-white-s.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-black-and-white-s",
+    "color": "블랙/화이트",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S"
+  },
+  {
+    "file": "bag/aren-black-s.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-black-s",
+    "color": "블랙",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S"
+  },
+  {
+    "file": "bag/aren-black.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-black",
+    "color": "블랙",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어"
+  },
+  {
+    "file": "bag/aren-e-w-lotus-pink-s.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-e-w-lotus-pink-s",
+    "color": "로터스 핑크",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S",
+    "note": "E/W(가로형) 실루엣"
+  },
+  {
+    "file": "bag/aren-e-w-soft-pink-s.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-e-w-soft-pink-s",
+    "color": "소프트 핑크",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S",
+    "note": "E/W(가로형) 실루엣"
+  },
+  {
+    "file": "bag/aren-hobo-maxi-visetos-cinnamon.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-hobo-maxi-visetos-cinnamon",
+    "color": "시나몬",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S",
+    "note": "맥시 비세토스 호보"
+  },
+  {
+    "file": "bag/aren-lotus-pink-leather-chain.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-lotus-pink-leather-chain",
+    "color": "로터스 핑크",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S",
+    "note": "레더+골드체인 변형 (비세토스 아님) — 카탈로그 작성 시 제품 구분 확인"
+  },
+  {
+    "file": "bag/aren-lotus-pink-s.png",
+    "category": "가방",
+    "line": "aren",
+    "product_id": "aren-lotus-pink-s",
+    "color": "로터스 핑크",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S"
+  },
+  {
+    "file": "bag/dessau-black-m.png",
+    "category": "가방",
+    "line": "dessau",
+    "product_id": "dessau-black-m",
+    "color": "블랙",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "M"
+  },
+  {
+    "file": "bag/dessau-cognac.png",
+    "category": "가방",
+    "line": "dessau",
+    "product_id": "dessau-cognac",
+    "color": "코냑",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "note": "비세토스 버킷백 — 대표 컷"
+  },
+  {
+    "file": "bag/diamant-3d-black-s.png",
+    "category": "가방",
+    "line": "diamant",
+    "product_id": "diamant-3d-black-s",
+    "color": "블랙",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S",
+    "note": "3D 모노그램"
+  },
+  {
+    "file": "bag/diamant-3d-orangeade-s.png",
+    "category": "가방",
+    "line": "diamant",
+    "product_id": "diamant-3d-orangeade-s",
+    "color": "오렌지에이드",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S",
+    "note": "3D 모노그램"
+  },
+  {
+    "file": "bag/mcm-x-ateez-ella-cognac.png",
+    "category": "가방",
+    "line": "ella",
+    "product_id": "mcm-x-ateez-ella-cognac",
+    "color": "코냑",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "note": "MCM X ATEEZ 콜라보 — 그래피티 프린트 보스턴"
+  },
+  {
+    "file": "bag/mcm-x-ateez-stark-black-s.png",
+    "category": "가방",
+    "line": "stark",
+    "product_id": "mcm-x-ateez-stark-black-s",
+    "color": "블랙",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S",
+    "note": "MCM X ATEEZ 콜라보 백팩"
+  },
+  {
+    "file": "bag/ottomar-black.png",
+    "category": "가방",
+    "line": "ottomar",
+    "product_id": "ottomar-black",
+    "color": "블랙",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "note": "41cm 토트"
+  },
+  {
+    "file": "bag/pina-black.png",
+    "category": "가방",
+    "line": "pina",
+    "product_id": "pina-black",
+    "color": "블랙",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "note": "레더 드로스트링 버킷"
+  },
+  {
+    "file": "bag/pina-cognac-s.png",
+    "category": "가방",
+    "line": "pina",
+    "product_id": "pina-cognac-s",
+    "color": "코냑",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S"
+  },
+  {
+    "file": "bag/stark-cinnamon-s.png",
+    "category": "가방",
+    "line": "stark",
+    "product_id": "stark-cinnamon-s",
+    "color": "시나몬",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "S",
+    "note": "백팩 — 핑크 비세토스"
+  },
+  {
+    "file": "bag/toni-white.png",
+    "category": "가방",
+    "line": "toni",
+    "product_id": "toni-white",
+    "color": "화이트",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "note": "화이트 비세토스 토트"
+  },
+  {
+    "file": "bag/tracy-cognac-l.png",
+    "category": "가방",
+    "line": "tracy",
+    "product_id": "tracy-cognac-l",
+    "color": "코냑",
+    "angle": "front",
+    "source": "MCM 공식 온라인 스토어",
+    "size": "L",
+    "note": "비세토스 호보 — 대표 컷"
+  }
+]
