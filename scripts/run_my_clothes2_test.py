@@ -5,6 +5,10 @@ from pathlib import Path
 # UTF-8 콘솔 출력 설정
 sys.stdout.reconfigure(encoding="utf-8")
 
+# 프로젝트 루트 import 설정
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
+
 from ai_pipeline.config import settings
 from ai_pipeline.schemas.analysis import AnalysisResult
 from ai_pipeline.schemas.user_input import ClothingCategory, UserInput
