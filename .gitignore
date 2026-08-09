@@ -251,3 +251,14 @@ data/**/*.jpg
 data/**/*.jpeg
 data/**/*.avif
 data/**/*.webp
+
+# 런타임 산출물
+storage/
+.env
+
+### Python ###
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
