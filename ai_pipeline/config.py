@@ -43,6 +43,8 @@ class Settings(BaseSettings):
     log_dir: Path = PROJECT_ROOT / "storage" / "logs"
     image_output_dir: Path = PROJECT_ROOT / "storage" / "images"
     model_output_dir: Path = PROJECT_ROOT / "storage" / "models"
+    upload_dir: Path = PROJECT_ROOT / "storage" / "uploads"
+    storage_dir: Path = PROJECT_ROOT / "storage"      # /ai/static 마운트 루트
 
     @field_validator("anthropic_api_key", "google_api_key", "meshy_api_key")
     @classmethod
