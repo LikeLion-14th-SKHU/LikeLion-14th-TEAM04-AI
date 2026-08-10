@@ -17,6 +17,12 @@ class Settings(BaseSettings):
     # API 키 — Stage 3 (Gemini 이미지 생성)
     google_api_key: str = ""
 
+    # API 키 — Stage 4 (Meshy image-to-3D)
+    meshy_api_key: str = ""
+    meshy_base_url: str = "https://api.meshy.ai/openapi/v1"
+    meshy_poll_interval_s: float = 5.0    # 폴링 주기
+    meshy_timeout_s: float = 600.0        # 생성 대기 상한 (보통 30~60초, 여유 있게)
+
     # 모델 (AI_Dev_PipeLine.md 3절)
     llm_model: str = "claude-sonnet-5"        # Stage 1·2·5
     gate_model: str = "claude-haiku-4-5"      # 검증 게이트 (effort 파라미터 미지원 주의)
@@ -36,8 +42,9 @@ class Settings(BaseSettings):
     brand_assets_path: Path = PROJECT_ROOT / "ai_pipeline" / "data" / "mcm_brand_assets.json"
     log_dir: Path = PROJECT_ROOT / "storage" / "logs"
     image_output_dir: Path = PROJECT_ROOT / "storage" / "images"
+    model_output_dir: Path = PROJECT_ROOT / "storage" / "models"
 
-    @field_validator("anthropic_api_key", "google_api_key")
+    @field_validator("anthropic_api_key", "google_api_key", "meshy_api_key")
     @classmethod
     def _reject_garbage_keys(cls, v: str) -> str:
         """.env 인라인 주석이 값으로 파싱된 경우 등 — 키처럼 보이지 않으면 빈 값 취급."""
