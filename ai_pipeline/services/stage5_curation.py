@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from ai_pipeline.config import PROJECT_ROOT, settings
+from ai_pipeline.config import settings
 from ai_pipeline.schemas.analysis import AnalysisResult
 from ai_pipeline.schemas.curation import (
     CurationResult,
@@ -18,8 +18,6 @@ from ai_pipeline.schemas.curation import (
 )
 from ai_pipeline.schemas.design_spec import DesignSpec
 from ai_pipeline.services import llm_client
-
-CATALOG_PATH = PROJECT_ROOT / "ai_pipeline" / "data" / "mcm_catalog.json"
 
 ROLE_AND_CATALOG_PROMPT = """\
 당신은 MCM의 럭셔리 큐레이터 및 에디토리얼 디렉터다.
@@ -54,9 +52,10 @@ RETRY_SUFFIX = """\
 
 def load_catalog() -> dict[str, Any]:
     """mcm_catalog.json 파일 로드."""
-    if not CATALOG_PATH.exists():
-        raise FileNotFoundError(f"카탈로그 파일이 없습니다: {CATALOG_PATH}")
-    return json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+    catalog_path = settings.mcm_catalog_path
+    if not catalog_path.exists():
+        raise FileNotFoundError(f"카탈로그 파일이 없습니다: {catalog_path}")
+    return json.loads(catalog_path.read_text(encoding="utf-8"))
 
 
 def build_system_blocks(catalog_data: dict[str, Any]) -> list[dict[str, Any]]:
@@ -87,6 +86,8 @@ def build_user_content(
 # 고객 사연 및 분석 결과 (analysis.json)
 - 정돈된 사연: {analysis.story.polished}
 - 사연 내부 해석 (주요 참조): {analysis.story.interpretation}
+- 옷의 재질: {analysis.visual.material_final}
+- 세월의 흔적: {', '.join(analysis.visual.condition_cues) or '없음'}
 - 감정 키워드: {', '.join(analysis.story.emotion_keywords)}
 - 분위기 키워드: {', '.join(analysis.visual.vibe_keywords)}
 - 에디션 명칭 후보: {', '.join(analysis.edition_name_candidates)}
