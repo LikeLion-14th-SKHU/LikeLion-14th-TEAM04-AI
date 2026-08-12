@@ -126,15 +126,13 @@ def run_after_selection(job_id: str, selected: GatedConcept) -> None:
         )
         result["thumbnail_url"] = model3d.thumbnail_url
 
-        # Stage 5 (팀원 개발분) — 병합돼 있으면 실행, 아니면 curation 없이 완료
-        try:
-            from ai_pipeline.services.stage5_curation import generate_curation
+        # Stage 5 — 큐레이션 + 제품명·사진 URL 부여 (stage5 엔드포인트와 동일 응답 형태)
+        from ai_pipeline.api.endpoints.stage5 import enrich_curation
+        from ai_pipeline.services.stage5_curation import generate_curation
 
-            store.update(job_id, stage="5", detail="럭셔리 큐레이션 중")
-            curation = generate_curation(job.internal["analysis"], selected.concept.spec)
-            result["curation"] = curation.model_dump() if hasattr(curation, "model_dump") else curation
-        except ImportError:
-            result["curation"] = None   # Stage 5 미병합 — 병합되면 자동으로 포함됨
+        store.update(job_id, stage="5", detail="럭셔리 큐레이션 중")
+        curation = generate_curation(job.internal["analysis"], selected.concept.spec)
+        result["curation"] = enrich_curation(curation).model_dump()
 
         store.update(job_id, status="done", stage=None, detail=None, result=result)
     except Exception as e:  # noqa: BLE001

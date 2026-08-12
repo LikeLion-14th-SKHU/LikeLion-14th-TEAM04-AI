@@ -231,3 +231,32 @@ def test_select_guards(monkeypatch, sample_analysis):
     assert client.post(f"/ai/v1/jobs/{job_id}/select", json={"candidate_index": 0}).status_code == 409
     # 없는 job → 404
     assert client.post("/ai/v1/jobs/nope/select", json={"candidate_index": 0}).status_code == 404
+
+
+# ---------------------------------------------------------------------------
+# 큐레이션 응답 보강 (A안: 제품 사진 URL + 제품명)
+# ---------------------------------------------------------------------------
+
+
+def test_curation_enrichment(monkeypatch):
+    from ai_pipeline.api.endpoints import stage5 as ep5
+    from ai_pipeline.schemas.curation import CurationResult
+
+    fake = CurationResult.model_validate({
+        "recommendations": [
+            {"product_id": "dessau-cognac", "reason": "여행의 서사", "tagline": "주말을 담은 가방"},
+            {"product_id": "ghost-product", "reason": "x", "tagline": "y"},   # 인덱스에 없는 ID
+        ]
+    })
+    enriched = ep5.enrich_curation(fake)
+
+    first, second = enriched.recommendations
+    assert first.image_url == "/ai/assets/bag/dessau-cognac.png", "인덱스 매칭 → 제품 사진 URL"
+    assert first.name_kr == "데사우 비세토스 버킷백", "카탈로그 매칭 → 한글 제품명"
+    assert second.image_url is None and second.name_kr is None, "매칭 실패는 null (에러 아님)"
+
+
+def test_assets_static_serving():
+    resp = client.get("/ai/assets/bag/dessau-cognac.png")
+    assert resp.status_code == 200
+    assert resp.headers["content-type"] == "image/png"

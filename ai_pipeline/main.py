@@ -29,6 +29,10 @@ app = FastAPI(
 settings.storage_dir.mkdir(parents=True, exist_ok=True)
 app.mount("/ai/static", StaticFiles(directory=settings.storage_dir), name="static")
 
+# MCM 제품 이미지 서빙 (큐레이션 카드용) — 추천 응답의 image_url이 /ai/assets/... 를 가리킴
+# ⚠️ 브랜드 이미지는 로컬 시연 서버에서만 서빙 — public 배포 금지 (저작권)
+app.mount("/ai/assets", StaticFiles(directory=settings.asset_root), name="assets")
+
 app.include_router(api_router, prefix="/ai/v1")
 
 
