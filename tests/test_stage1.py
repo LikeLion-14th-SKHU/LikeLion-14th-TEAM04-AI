@@ -13,7 +13,7 @@ from ai_pipeline.services.stage1_narrative import analyze, _build_image_block
 @pytest.fixture
 def sample_user_input() -> UserInput:
     return UserInput(
-        category=ClothingCategory(main="상의", sub="셔츠"),
+        category=ClothingCategory(main="의류", sub="셔츠"),
         material="데님",
         condition=["해짐", "색 바램"],
         story="아버지가 20년 넘게 입으신 데님 셔츠예요. 주말마다 이 셔츠를 입고 저를 자전거에 태워주셨어요.",
@@ -21,7 +21,7 @@ def sample_user_input() -> UserInput:
 
 
 def test_user_input_validation(sample_user_input: UserInput):
-    assert sample_user_input.category.main == "상의"
+    assert sample_user_input.category.main == "의류"
     assert sample_user_input.category.sub == "셔츠"
     assert sample_user_input.material == "데님"
     assert sample_user_input.material_unknown is False
@@ -29,8 +29,8 @@ def test_user_input_validation(sample_user_input: UserInput):
 
 def test_user_input_material_unknown():
     ui = UserInput(
-        category=ClothingCategory(main="아우터", sub="자켓"),
-        material="모르겠어요",
+        category=ClothingCategory(main="의류", sub="자켓"),
+        material="선택안함",
         condition=["얼룩"],
         story="길에서 주운 가죽 자켓인데 재질을 잘 모르겠어요.",
     )

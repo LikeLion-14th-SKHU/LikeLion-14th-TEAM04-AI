@@ -21,7 +21,7 @@ from ai_pipeline.services.stage1_narrative import analyze
 
 
 SAMPLE_USER_INPUT = UserInput(
-    category=ClothingCategory(main="상의", sub="셔츠"),
+    category=ClothingCategory(main="의류", sub="셔츠"),
     material="데님",
     condition=["해짐", "색 바램"],
     story="아버지가 20년 넘게 입으신 데님 셔츠예요. 주말마다 이 셔츠를 입고 저를 자전거에 태워주셨어요.",

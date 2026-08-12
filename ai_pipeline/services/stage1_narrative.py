@@ -30,7 +30,7 @@ MCM 업사이클링 디자이너(Stage 2)가 제품 설계에 사용할 수 있�
 - material_user: 고객이 토글로 선택한 재질 (user_input.material) 그대로 기록.
 - material_estimate: 옷 사진을 보고 Vision으로 추정한 원단 재질 (예: "데님", "면", "울", "가죽", "폴리에스터" 등).
 - material_final: 병합 규칙 적용.
-  * material_user가 "모르겠어요"인 경우 -> material_estimate 채택
+  * material_user가 "선택안함"인 경우 -> material_estimate 채택
   * material_user가 지정되어 있는 경우 -> material_user 채택
 - condition_cues: 사진과 사연에서 포착되는 해짐, 색 바램, 얼룩, 늘어남, 마모 자국 등 세월의 흔적 (list of str).
   * 이 흔적들은 훗날 '비저블 멘딩(Visible Mending)'의 중요한 디자인 근거가 됩니다.
