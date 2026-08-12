@@ -40,6 +40,7 @@ class Settings(BaseSettings):
     asset_index_path: Path = PROJECT_ROOT / "data" / "_index.json"
     asset_root: Path = PROJECT_ROOT / "data"
     brand_assets_path: Path = PROJECT_ROOT / "ai_pipeline" / "data" / "mcm_brand_assets.json"
+    mcm_catalog_path: Path = PROJECT_ROOT / "ai_pipeline" / "data" / "mcm_catalog.json"
     log_dir: Path = PROJECT_ROOT / "storage" / "logs"
     image_output_dir: Path = PROJECT_ROOT / "storage" / "images"
     model_output_dir: Path = PROJECT_ROOT / "storage" / "models"

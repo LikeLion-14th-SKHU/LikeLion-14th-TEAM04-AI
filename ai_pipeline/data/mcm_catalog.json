@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "product_id": "dessau-cognac",
+      "name_kr": "데사우 비세토스 버킷백",
+      "category": "가방",
+      "description": "MCM의 여행 헤리티지를 모던한 드로스트링 버킷 실루엣으로 풀어낸 클래식 캔버스 백. 클래식한 비세토스 모노그램과 넉넉한 수납력으로 어디론가 떠나는 여정 및 새로운 시작의 순간과 잘 어울린다.",
+      "style_keywords": ["여행", "클래식", "출발", "동행", "새로운시작"],
+      "price_krw": null
+    },
+    {
+      "product_id": "aren-black-s",
+      "name_kr": "아렌 비세토스 토트 S",
+      "category": "가방",
+      "description": "정갈한 블랙 비세토스 모노그램과 컴팩트한 토트 실루엣의 만남. 깔끔하고 정돈된 분위기로 일상의 소중한 날들이나 정갈한 출근길과 어울린다.",
+      "style_keywords": ["일상", "데일리", "정갈함", "출근", "단정"],
+      "price_krw": null
+    },
+    {
+      "product_id": "diamant-3d-black-s",
+      "name_kr": "디아망 3D 숄더백 S",
+      "category": "가방",
+      "description": "입체적인 3D 모노그램 기법이 적용된 감각적인 숄더백. 모던하고 유니크한 아우라를 지녀 개성 있는 기억이나 감각적인 순간의 사연과 조화를 이룬다.",
+      "style_keywords": ["트렌디", "유니크", "모던", "감각적", "특별한날"],
+      "price_krw": null
+    },
+    {
+      "product_id": "mcm-x-ateez-ella-cognac",
+      "name_kr": "MCM X ATEEZ 엘라 보스턴백",
+      "category": "가방",
+      "description": "ATEEZ 콜라보레이션의 굵은 그래피티 프린트가 새겨진 자유로운 에너지를 지닌 보스턴백. 청춘의 열정과 강렬한 기억, 친구들과의 유쾌한 추억을 상징한다.",
+      "style_keywords": ["청춘", "열정", "우정", "자유", "스트릿"],
+      "price_krw": null
+    },
+    {
+      "product_id": "mcm-x-ateez-stark-black-s",
+      "name_kr": "MCM X ATEEZ 스타크 백팩 S",
+      "category": "가방",
+      "description": "콜라보 그래피티 포인트가 들어간 백팩으로, 자유롭고 역동적인 에너지가 담긴 제품. 학창 시절의 기억이나 친구들과 무작정 떠났던 순간들과 매칭하기 좋다.",
+      "style_keywords": ["학창시절", "추억", "역동적", "우정", "청춘"],
+      "price_krw": null
+    },
+    {
+      "product_id": "ottomar-black",
+      "name_kr": "오토마 레더 토트 41",
+      "category": "가방",
+      "description": "41cm의 넉넉하고 묵직한 가죽 바디가 주는 신뢰감 넘치는 프리미엄 토트백. 오랜 시간 쌓아온 든든함과 묵묵한 서사를 대변한다.",
+      "style_keywords": ["든든함", "묵직함", "신뢰", "세월", "프리미엄"],
+      "price_krw": null
+    },
+    {
+      "product_id": "pina-black",
+      "name_kr": "피나 레더 드로스트링 버킷백",
+      "category": "가방",
+      "description": "부드러운 프리미엄 가죽 드로스트링 디테일로 완성된 미니멀하고 따뜻한 실루엣. 소중한 사람에게 마음을 건네는 따스한 기억과 어울린다.",
+      "style_keywords": ["따뜻함", "마음", "선물", "소중함", "미니멀"],
+      "price_krw": null
+    },
+    {
+      "product_id": "pina-cognac-s",
+      "name_kr": "피나 비세토스 버킷백 S",
+      "category": "가방",
+      "description": "MCM 시그니처 코냑 비세토스 캔버스에 유연한 조임 끈이 어우러진 조화로운 버킷백. 클래식한 멋과 친근한 가치가 공존하여 친근하고 오랜 기억을 연상시킨다.",
+      "style_keywords": ["클래식", "친근함", "그리움", "편안함", "가치"],
+      "price_krw": null
+    },
+    {
+      "product_id": "stark-cinnamon-s",
+      "name_kr": "스타크 비세토스 백팩 S",
+      "category": "가방",
+      "description": "따스한 시나몬/핑크 톤 비세토스 백팩으로 양손이 자유로운 활동적인 어반 라이프스타일을 대변. 가족과의 주말 외출이나 따스한 여행길을 떠올리게 한다.",
+      "style_keywords": ["가족", "주말", "따스함", "활동적", "소풍"],
+      "price_krw": null
+    },
+    {
+      "product_id": "toni-white",
+      "name_kr": "토니 비세토스 쇼퍼 토트",
+      "category": "가방",
+      "description": "화사한 화이트 비세토스 캔버스의 시원하고 맑은 감성을 전하는 쇼퍼백. 바닷가에서의 웃음소리, 맑고 밝은 여름날의 추억과 완벽히 호응한다.",
+      "style_keywords": ["여름", "바다", "화사함", "밝음", "즐거움"],
+      "price_krw": null
+    },
+    {
+      "product_id": "tracy-cognac-l",
+      "name_kr": "트레이시 비세토스 호보 L",
+      "category": "가방",
+      "description": "부드러운 곡선 호보 실루엣과 여유로운 사이즈가 조화를 이루는 비세토스 백. 어깨에 자연스럽게 감기는 안락함으로 포근한 추억과 일상의 동행자가 되어준다.",
+      "style_keywords": ["여유", "포근함", "동행", "자연스러움", "안락"],
+      "price_krw": null
+    },
+    {
+      "product_id": "aren-hobo-maxi-visetos-cinnamon",
+      "name_kr": "아렌 맥시 비세토스 호보 S",
+      "category": "가방",
+      "description": "대담한 맥시 비세토스 패턴과 시나몬 컬러가 인상적인 호보백. 세월이 흘러도 변하지 않는 강렬한 인상과 시대를 초월한 가치를 대표한다.",
+      "style_keywords": ["대담함", "세월", "클래식", "시나몬", "가치"],
+      "price_krw": null
+    }
+  ]
+}
