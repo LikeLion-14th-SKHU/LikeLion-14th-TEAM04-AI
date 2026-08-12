@@ -40,6 +40,8 @@ def run_3d_job(job_id: str, image_path: Path) -> None:
             status="done", stage=None, detail=None,
             result={
                 "glb_url": storage_url(result.glb_path),
+                # 컬렉션 그리드용 투명 배경 정면 PNG (렌더 실패 시 null → glb_url만 사용)
+                "front_image_url": storage_url(result.front_image_path) if result.front_image_path else None,
                 "thumbnail_url": result.thumbnail_url,
                 "consumed_credits": result.consumed_credits,
             },

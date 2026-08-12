@@ -41,6 +41,7 @@ class Model3D:
     trace_id: str
     thumbnail_url: str | None
     consumed_credits: int | None
+    front_image_path: Path | None = None   # 투명 배경 정면 PNG (컬렉션 그리드용, 렌더 실패 시 None)
 
 
 def _make_client() -> httpx.Client:
@@ -160,6 +161,11 @@ def generate_3d_model(
     finally:
         if own_client:
             client.close()
+
+    # 컬렉션 그리드용 투명 배경 정면 썸네일 (실패해도 치명적 아님 — glb만 제공)
+    from ai_pipeline.services.glb_render import render_front_png_safe
+
+    front_image_path = render_front_png_safe(glb_path)
     latency_ms = int((time.monotonic() - t0) * 1000)
 
     _write_trace(
@@ -178,4 +184,5 @@ def generate_3d_model(
         trace_id=trace_id,
         thumbnail_url=task.get("thumbnail_url"),
         consumed_credits=task.get("consumed_credits"),
+        front_image_path=front_image_path,
     )

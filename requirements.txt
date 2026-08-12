@@ -4,6 +4,19 @@ pydantic>=2.7
 pydantic-settings>=2.2
 pillow>=10.0
 httpx>=0.27
+
+# GLB → 2D 썸네일 렌더 (glb_render.py)
+# ⚠️ pyrender는 구버전 PyOpenGL(3.1.0)을 고정해 pip 빌드가 깨지므로 requirements에 넣지 않음.
+#    이 파일 설치 후 별도로 1회:  pip install pyrender --no-deps
+#    (pyrender 미설치여도 파이프라인은 동작 — 썸네일만 null)
+trimesh>=4.0
+PyOpenGL>=3.1.7
+pyglet>=2.0
+freetype-py
+imageio
+networkx
+scipy
+six
 fastapi>=0.111
 uvicorn>=0.30
 pytest>=8.0

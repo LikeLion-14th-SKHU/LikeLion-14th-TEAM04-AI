@@ -121,6 +121,9 @@ def run_after_selection(job_id: str, selected: GatedConcept) -> None:
             "image_url": storage_url(selected.concept.image_path),
         }
         result["glb_url"] = storage_url(model3d.glb_path)
+        result["front_image_url"] = (
+            storage_url(model3d.front_image_path) if model3d.front_image_path else None
+        )
         result["thumbnail_url"] = model3d.thumbnail_url
 
         # Stage 5 (팀원 개발분) — 병합돼 있으면 실행, 아니면 curation 없이 완료
