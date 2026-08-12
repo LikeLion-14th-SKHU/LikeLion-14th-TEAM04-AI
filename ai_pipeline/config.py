@@ -23,6 +23,11 @@ class Settings(BaseSettings):
     meshy_poll_interval_s: float = 5.0    # 폴링 주기
     meshy_timeout_s: float = 600.0        # 생성 대기 상한 (보통 30~60초, 여유 있게)
 
+    # Stage 4 품질 튜닝 (.env에서 코드 수정 없이 조정 — 실물 결과 보며 튜닝용)
+    meshy_texture_resolution: str = "2k"  # 2k | 4k | 8k — 발표용 최종은 4k 권장 (크레딧↑)
+    meshy_texture_prompt: str = ""        # 텍스처 텍스트 가이드 (영문, ≤600자). 빈 값이면 미전송.
+                                          # 예: "cognac Visetos monogram canvas, brass hardware"
+
     # 모델 (AI_Dev_PipeLine.md 3절)
     llm_model: str = "claude-sonnet-5"        # Stage 1·2·5
     gate_model: str = "claude-haiku-4-5"      # 검증 게이트 (effort 파라미터 미지원 주의)

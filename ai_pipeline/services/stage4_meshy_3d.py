@@ -68,14 +68,21 @@ def image_to_data_uri(image_path: Path) -> str:
 
 
 def build_create_payload(image_path: Path) -> dict[str, Any]:
-    """태스크 생성 요청 본문. 텍스처 품질(PBR)이 채택 근거이므로 enable_pbr을 켠다."""
-    return {
+    """태스크 생성 요청 본문. 텍스처 품질(PBR)이 채택 근거이므로 enable_pbr을 켠다.
+
+    품질 튜닝 노브는 config(.env)로 조정: MESHY_TEXTURE_RESOLUTION, MESHY_TEXTURE_PROMPT.
+    """
+    payload: dict[str, Any] = {
         "image_url": image_to_data_uri(image_path),
         "ai_model": "latest",
         "should_texture": True,
         "enable_pbr": True,           # 비세토스 패턴·가죽 질감 재현 (AI_Dev_PipeLine.md Stage 4 선정 근거)
+        "texture_resolution": settings.meshy_texture_resolution,
         "target_formats": ["glb"],    # 웹 뷰어('추억의 옷장')용
     }
+    if settings.meshy_texture_prompt.strip():
+        payload["texture_prompt"] = settings.meshy_texture_prompt.strip()[:600]  # API 상한 600자
+    return payload
 
 
 def create_task(image_path: Path, client: httpx.Client) -> str:

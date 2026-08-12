@@ -150,3 +150,20 @@ def test_generate_3d_model_smoke(tmp_path):
     result = generate_3d_model(images[-1], out_dir=tmp_path, on_progress=lambda p, s: print(f"{s} {p}%"))
     assert result.glb_path.exists()
     assert result.glb_path.stat().st_size > 100_000, "GLB치고 너무 작음"
+
+
+def test_payload_texture_tuning_knobs(concept_image, monkeypatch):
+    """config 튜닝 노브가 payload에 반영되는지 — 빈 프롬프트는 미전송, 600자 초과는 절단."""
+    monkeypatch.setattr(settings, "meshy_texture_resolution", "4k")
+    monkeypatch.setattr(settings, "meshy_texture_prompt", "")
+    payload = build_create_payload(concept_image)
+    assert payload["texture_resolution"] == "4k"
+    assert "texture_prompt" not in payload, "빈 값이면 필드 자체를 보내지 않아야 함"
+
+    monkeypatch.setattr(settings, "meshy_texture_prompt", "  cognac Visetos monogram canvas  ")
+    payload = build_create_payload(concept_image)
+    assert payload["texture_prompt"] == "cognac Visetos monogram canvas", "trim 적용"
+
+    monkeypatch.setattr(settings, "meshy_texture_prompt", "x" * 700)
+    payload = build_create_payload(concept_image)
+    assert len(payload["texture_prompt"]) == 600, "API 상한 600자 절단"
