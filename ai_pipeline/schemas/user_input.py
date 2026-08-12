@@ -1,40 +1,44 @@
-"""Stage 1 입력(user_input) 스키마 — ⚠️ 시작점 초안.
+"""Stage 1 입력(user_input) 스키마 — ✅ 프론트엔드 확정본 (2026-08-12 통보 기준).
 
-소유: Stage 1 담당 (팀원). 이 파일은 AI_Dev_PipeLine.md Stage 1 절의 토글 정의를
-코드로 옮긴 출발점이며, 최종 확정은 Stage 1 담당자가 한다.
+소유: Stage 1 담당 (팀원). 아래 토글 선택지는 프론트 UI와 1:1로 확정된 계약이다.
+값을 바꾸려면 프론트엔드 팀과 재협의 필수.
 
 계약 상대가 analysis.py와 다르다:
 - analysis.py  → Stage 1 ↔ Stage 2 (창현) 사이의 계약
 - user_input.py → Stage 1 ↔ 프론트엔드/백엔드 사이의 계약
-  (아래 enum들은 토글 UI의 선택지와 1:1로 일치해야 한다 — 값 변경 시 프론트와 협의)
+
+⚠️ 확정 반영 시 변경된 것 (Stage 1 담당자 확인 필요):
+- 대분류가 상의/하의/아우터/... → 의류/가방/악세사리 로 재편 (기타 없음 — 자유 입력 분기 제거)
+- 재질의 '모르겠어요' → '선택안함' 으로 명칭 변경.
+  Stage 1 프롬프트의 재질 병합 규칙("모르겠어요면 Vision 추정 채택") 문구도 맞춰 바꿀 것!
 
 참고: 이 스키마는 사용자 입력 검증용이라 Structured Outputs 제약과 무관하다.
-max_length 같은 수치 제약을 자유롭게 써도 된다 (LLM 출력 스키마인 analysis/design_spec과 다른 점).
+max_length 같은 수치 제약을 자유롭게 써도 된다.
 """
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 # ---------------------------------------------------------------------------
-# 토글 선택지 (= 프론트 UI와 1:1)
+# 토글 선택지 (= 프론트 UI와 1:1, 2026-08-12 확정)
 # ---------------------------------------------------------------------------
 
-MainCategory = Literal["상의", "하의", "아우터", "원피스·스커트", "기타"]
+MainCategory = Literal["의류", "가방", "악세사리"]
 
-# 대분류 → 중분류 목록. ⚠️ 문서에는 상의 예시만 있음 — 나머지는 초안이니 UI 팀과 확정할 것
 SUB_CATEGORIES: dict[str, list[str]] = {
-    "상의": ["후드티", "티셔츠", "셔츠", "니트", "맨투맨", "블라우스"],
-    "하의": ["청바지", "슬랙스", "반바지", "트레이닝 팬츠"],
-    "아우터": ["자켓", "코트", "패딩", "가디건", "점퍼"],
-    "원피스·스커트": ["원피스", "스커트"],
-    "기타": [],  # 기타는 중분류 자유 입력 허용
+    "의류": ["니트", "가디건", "셔츠", "자켓", "원피스", "후드티", "블라우스", "팬츠"],
+    "가방": ["핸드백", "토트백", "백팩", "클러치", "트래블"],
+    "악세사리": ["벨트", "스카프", "지갑", "키링", "헤어밴드"],
 }
 
-Material = Literal["면", "데님", "울·니트", "가죽", "폴리", "모르겠어요"]
+Material = Literal["데님", "가죽", "니트", "울", "면", "린넨", "벨벳", "레이스", "선택안함"]
 
+# 상태 토글은 프론트 확정 통보에 없었음 — 기존 정의 유지 (변경 시 여기도 확정 반영)
 Condition = Literal["해짐", "색 바램", "얼룩", "늘어남", "새것 같음"]
 
 STORY_MAX_LENGTH = 500
+
+MATERIAL_UNKNOWN = "선택안함"   # 이 값이면 Stage 1이 재질 판정을 Vision 추정에 위임
 
 
 # ---------------------------------------------------------------------------
@@ -46,15 +50,13 @@ class ClothingCategory(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     main: MainCategory
-    sub: str  # SUB_CATEGORIES[main] 중 하나 (기타는 자유 입력)
+    sub: str  # SUB_CATEGORIES[main] 중 하나
 
     @model_validator(mode="after")
     def sub_must_belong_to_main(self) -> "ClothingCategory":
         allowed = SUB_CATEGORIES[self.main]
-        if allowed and self.sub not in allowed:
+        if self.sub not in allowed:
             raise ValueError(f"'{self.main}'의 중분류가 아님: '{self.sub}' (허용: {allowed})")
-        if not allowed and not self.sub.strip():
-            raise ValueError("기타 카테고리는 중분류를 직접 입력해야 함")
         return self
 
 
@@ -72,8 +74,8 @@ class UserInput(BaseModel):
 
     @property
     def material_unknown(self) -> bool:
-        """'모르겠어요' 선택 여부 — True면 Stage 1이 재질 판정을 Vision 추정에 위임한다.
+        """'선택안함' 여부 — True면 Stage 1이 재질 판정을 Vision 추정에 위임한다.
 
-        (analysis.py의 재질 병합 규칙: 사용자 값 우선, '모르겠어요'일 때만 Vision 값 채택)
+        (analysis.py의 재질 병합 규칙: 사용자 값 우선, '선택안함'일 때만 Vision 값 채택)
         """
-        return self.material == "모르겠어요"
+        return self.material == MATERIAL_UNKNOWN
