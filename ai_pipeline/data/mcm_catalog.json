@@ -5,7 +5,13 @@
       "name_kr": "데사우 비세토스 버킷백",
       "category": "가방",
       "description": "MCM의 여행 헤리티지를 모던한 드로스트링 버킷 실루엣으로 풀어낸 클래식 캔버스 백. 클래식한 비세토스 모노그램과 넉넉한 수납력으로 어디론가 떠나는 여정 및 새로운 시작의 순간과 잘 어울린다.",
-      "style_keywords": ["여행", "클래식", "출발", "동행", "새로운시작"],
+      "style_keywords": [
+        "여행",
+        "클래식",
+        "출발",
+        "동행",
+        "새로운시작"
+      ],
       "price_krw": null
     },
     {
@@ -13,7 +19,13 @@
       "name_kr": "아렌 비세토스 토트 S",
       "category": "가방",
       "description": "정갈한 블랙 비세토스 모노그램과 컴팩트한 토트 실루엣의 만남. 깔끔하고 정돈된 분위기로 일상의 소중한 날들이나 정갈한 출근길과 어울린다.",
-      "style_keywords": ["일상", "데일리", "정갈함", "출근", "단정"],
+      "style_keywords": [
+        "일상",
+        "데일리",
+        "정갈함",
+        "출근",
+        "단정"
+      ],
       "price_krw": null
     },
     {
@@ -21,7 +33,13 @@
       "name_kr": "디아망 3D 숄더백 S",
       "category": "가방",
       "description": "입체적인 3D 모노그램 기법이 적용된 감각적인 숄더백. 모던하고 유니크한 아우라를 지녀 개성 있는 기억이나 감각적인 순간의 사연과 조화를 이룬다.",
-      "style_keywords": ["트렌디", "유니크", "모던", "감각적", "특별한날"],
+      "style_keywords": [
+        "트렌디",
+        "유니크",
+        "모던",
+        "감각적",
+        "특별한날"
+      ],
       "price_krw": null
     },
     {
@@ -29,7 +47,13 @@
       "name_kr": "MCM X ATEEZ 엘라 보스턴백",
       "category": "가방",
       "description": "ATEEZ 콜라보레이션의 굵은 그래피티 프린트가 새겨진 자유로운 에너지를 지닌 보스턴백. 청춘의 열정과 강렬한 기억, 친구들과의 유쾌한 추억을 상징한다.",
-      "style_keywords": ["청춘", "열정", "우정", "자유", "스트릿"],
+      "style_keywords": [
+        "청춘",
+        "열정",
+        "우정",
+        "자유",
+        "스트릿"
+      ],
       "price_krw": null
     },
     {
@@ -37,7 +61,13 @@
       "name_kr": "MCM X ATEEZ 스타크 백팩 S",
       "category": "가방",
       "description": "콜라보 그래피티 포인트가 들어간 백팩으로, 자유롭고 역동적인 에너지가 담긴 제품. 학창 시절의 기억이나 친구들과 무작정 떠났던 순간들과 매칭하기 좋다.",
-      "style_keywords": ["학창시절", "추억", "역동적", "우정", "청춘"],
+      "style_keywords": [
+        "학창시절",
+        "추억",
+        "역동적",
+        "우정",
+        "청춘"
+      ],
       "price_krw": null
     },
     {
@@ -45,7 +75,13 @@
       "name_kr": "오토마 레더 토트 41",
       "category": "가방",
       "description": "41cm의 넉넉하고 묵직한 가죽 바디가 주는 신뢰감 넘치는 프리미엄 토트백. 오랜 시간 쌓아온 든든함과 묵묵한 서사를 대변한다.",
-      "style_keywords": ["든든함", "묵직함", "신뢰", "세월", "프리미엄"],
+      "style_keywords": [
+        "든든함",
+        "묵직함",
+        "신뢰",
+        "세월",
+        "프리미엄"
+      ],
       "price_krw": null
     },
     {
@@ -53,7 +89,13 @@
       "name_kr": "피나 레더 드로스트링 버킷백",
       "category": "가방",
       "description": "부드러운 프리미엄 가죽 드로스트링 디테일로 완성된 미니멀하고 따뜻한 실루엣. 소중한 사람에게 마음을 건네는 따스한 기억과 어울린다.",
-      "style_keywords": ["따뜻함", "마음", "선물", "소중함", "미니멀"],
+      "style_keywords": [
+        "따뜻함",
+        "마음",
+        "선물",
+        "소중함",
+        "미니멀"
+      ],
       "price_krw": null
     },
     {
@@ -61,7 +103,13 @@
       "name_kr": "피나 비세토스 버킷백 S",
       "category": "가방",
       "description": "MCM 시그니처 코냑 비세토스 캔버스에 유연한 조임 끈이 어우러진 조화로운 버킷백. 클래식한 멋과 친근한 가치가 공존하여 친근하고 오랜 기억을 연상시킨다.",
-      "style_keywords": ["클래식", "친근함", "그리움", "편안함", "가치"],
+      "style_keywords": [
+        "클래식",
+        "친근함",
+        "그리움",
+        "편안함",
+        "가치"
+      ],
       "price_krw": null
     },
     {
@@ -69,7 +117,13 @@
       "name_kr": "스타크 비세토스 백팩 S",
       "category": "가방",
       "description": "따스한 시나몬/핑크 톤 비세토스 백팩으로 양손이 자유로운 활동적인 어반 라이프스타일을 대변. 가족과의 주말 외출이나 따스한 여행길을 떠올리게 한다.",
-      "style_keywords": ["가족", "주말", "따스함", "활동적", "소풍"],
+      "style_keywords": [
+        "가족",
+        "주말",
+        "따스함",
+        "활동적",
+        "소풍"
+      ],
       "price_krw": null
     },
     {
@@ -77,7 +131,13 @@
       "name_kr": "토니 비세토스 쇼퍼 토트",
       "category": "가방",
       "description": "화사한 화이트 비세토스 캔버스의 시원하고 맑은 감성을 전하는 쇼퍼백. 바닷가에서의 웃음소리, 맑고 밝은 여름날의 추억과 완벽히 호응한다.",
-      "style_keywords": ["여름", "바다", "화사함", "밝음", "즐거움"],
+      "style_keywords": [
+        "여름",
+        "바다",
+        "화사함",
+        "밝음",
+        "즐거움"
+      ],
       "price_krw": null
     },
     {
@@ -85,7 +145,13 @@
       "name_kr": "트레이시 비세토스 호보 L",
       "category": "가방",
       "description": "부드러운 곡선 호보 실루엣과 여유로운 사이즈가 조화를 이루는 비세토스 백. 어깨에 자연스럽게 감기는 안락함으로 포근한 추억과 일상의 동행자가 되어준다.",
-      "style_keywords": ["여유", "포근함", "동행", "자연스러움", "안락"],
+      "style_keywords": [
+        "여유",
+        "포근함",
+        "동행",
+        "자연스러움",
+        "안락"
+      ],
       "price_krw": null
     },
     {
@@ -93,8 +159,1394 @@
       "name_kr": "아렌 맥시 비세토스 호보 S",
       "category": "가방",
       "description": "대담한 맥시 비세토스 패턴과 시나몬 컬러가 인상적인 호보백. 세월이 흘러도 변하지 않는 강렬한 인상과 시대를 초월한 가치를 대표한다.",
-      "style_keywords": ["대담함", "세월", "클래식", "시나몬", "가치"],
+      "style_keywords": [
+        "대담함",
+        "세월",
+        "클래식",
+        "시나몬",
+        "가치"
+      ],
       "price_krw": null
+    },
+    {
+      "product_id": "cardigan_blush-pink-s",
+      "name_kr": "크롭 니트 가디건",
+      "category": "가디건",
+      "description": "은은한 블러시 핑크 컬러의 크롭 실루엣 니트 가디건. 포근하면서도 사랑스러운 무드로 봄날의 데이트나 다정한 티타임 순간을 떠오르게 한다.",
+      "style_keywords": [
+        "로맨틱",
+        "포근함",
+        "봄나들이",
+        "설렘",
+        "데이트"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "cardigan_dark-grey-l",
+      "name_kr": "울 니트 가디건",
+      "category": "가디건",
+      "description": "차분한 다크 그레이 톤의 울 니트 가디건. 묵직하면서도 편안한 감촉이 조용한 서재나 늦은 오후의 사색 시간과 잘 어울린다.",
+      "style_keywords": [
+        "차분함",
+        "편안함",
+        "가을감성",
+        "여유",
+        "일상"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "cardigan_white-croissant-m",
+      "name_kr": "인타르시아 니트 가디건",
+      "category": "가디건",
+      "description": "화이트 크루아상 컬러의 인타르시아 패턴 니트 가디건. 산뜻하고 유니크한 무늬가 주말 브런치나 소소한 나들이의 즐거움을 담아낸다.",
+      "style_keywords": [
+        "산뜻함",
+        "브런치",
+        "경쾌함",
+        "개성",
+        "주말"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "knit_dark-grey-l",
+      "name_kr": "로렐 로고 크루넥 니트",
+      "category": "니트",
+      "description": "다크 그레이 컬러에 로렐 로고가 새겨진 크루넥 니트. 클래식하고 단정한 분위기가 캠퍼스나 오래된 도서관에서의 시간을 연상시킨다.",
+      "style_keywords": [
+        "클래식",
+        "단정함",
+        "캠퍼스",
+        "차분함",
+        "가을"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shirt_della-robbia-blue-40-it",
+      "name_kr": "코튼 옥스포드 셔츠",
+      "category": "셔츠",
+      "description": "델라 로비아 블루 컬러의 코튼 옥스포드 셔츠. 청량한 색감이 맑은 하늘 아래 산책이나 상쾌한 아침 출근길을 떠올리게 한다.",
+      "style_keywords": [
+        "청량함",
+        "상쾌함",
+        "아침",
+        "산책",
+        "깔끔함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shirt_indigo-46-it",
+      "name_kr": "데님 셔츠",
+      "category": "셔츠",
+      "description": "인디고 컬러의 데님 셔츠. 빈티지한 무드와 견고한 실루엣이 자유로운 주말이나 여행길의 캐주얼한 순간과 어울린다.",
+      "style_keywords": [
+        "빈티지",
+        "자유로움",
+        "캐주얼",
+        "여행",
+        "편안함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shirt_orangeade-40-it",
+      "name_kr": "모노그램 프린트 셔츠",
+      "category": "셔츠",
+      "description": "오렌지에이드 컬러의 모노그램 프린트 셔츠. 발랄한 색감과 패턴이 여름 휴가지의 활기찬 하루를 그려낸다.",
+      "style_keywords": [
+        "발랄함",
+        "여름휴가",
+        "활기참",
+        "화사함",
+        "경쾌함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shirt_orangeade-48-it",
+      "name_kr": "코튼 하프슬리브 셔츠",
+      "category": "셔츠",
+      "description": "오렌지에이드 컬러의 코튼 하프슬리브 셔츠. 가벼운 소매 길이와 밝은 톤이 따뜻한 계절의 리조트 무드를 자아낸다.",
+      "style_keywords": [
+        "리조트",
+        "화사함",
+        "여유",
+        "여름",
+        "가벼움"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shirt_soft-pink-40-it",
+      "name_kr": "모노그램 프린트 셔츠",
+      "category": "셔츠",
+      "description": "소프트 핑크 컬러의 모노그램 프린트 셔츠. 부드러운 색감이 다정한 오후의 산책이나 친구와의 소소한 만남을 떠올리게 한다.",
+      "style_keywords": [
+        "부드러움",
+        "다정함",
+        "오후산책",
+        "친밀함",
+        "화사함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shirt_mcm-x-we-the-best-black-and-white-l",
+      "name_kr": "MCM X 위 더 베스트 저지 셔츠",
+      "category": "셔츠",
+      "description": "블랙과 화이트가 대비를 이루는 MCM X 위 더 베스트 협업 저지 셔츠. 강렬하고 스트리트한 무드가 자신감 넘치는 하루와 어울린다.",
+      "style_keywords": [
+        "스트리트",
+        "강렬함",
+        "자신감",
+        "협업",
+        "개성"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "skirt_econyl-black-m",
+      "name_kr": "에코닐 모노그램 나일론 스커트",
+      "category": "스커트",
+      "description": "블랙 컬러의 에코닐 모노그램 나일론 스커트. 실용적이면서도 세련된 실루엣이 활동적인 도심 속 하루와 잘 맞는다.",
+      "style_keywords": [
+        "세련됨",
+        "활동적",
+        "도시적",
+        "모던",
+        "실용성"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "skirt_econyl-soft-pink-s",
+      "name_kr": "에코닐 모노그램 나일론 스커트",
+      "category": "스커트",
+      "description": "소프트 핑크 컬러의 에코닐 모노그램 나일론 스커트. 은은한 색감과 가벼운 소재감이 봄날의 산뜻한 외출을 떠올리게 한다.",
+      "style_keywords": [
+        "산뜻함",
+        "봄외출",
+        "가벼움",
+        "사랑스러움",
+        "경쾌함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "skirt_indigo-m",
+      "name_kr": "데님 오버올 스커트",
+      "category": "스커트",
+      "description": "인디고 컬러의 데님 오버올 스커트. 편안하고 캐주얼한 실루엣이 자유로운 주말 나들이나 소풍 같은 순간과 어울린다.",
+      "style_keywords": [
+        "캐주얼",
+        "자유로움",
+        "소풍",
+        "편안함",
+        "활동적"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_black-36-it",
+      "name_kr": "청키 레더 로퍼",
+      "category": "신발",
+      "description": "블랙 컬러의 청키 레더 로퍼. 단단한 볼륨감과 클래식한 디자인이 자신감 있는 출근길이나 도심 속 하루를 완성한다.",
+      "style_keywords": [
+        "클래식",
+        "자신감",
+        "도시적",
+        "단정함",
+        "모던"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_black-36-it-2",
+      "name_kr": "레더 버클 샌들",
+      "category": "신발",
+      "description": "블랙 컬러의 레더 버클 샌들. 깔끔한 스트랩 디테일이 여름밤의 세련된 외출이나 특별한 저녁 자리를 떠올리게 한다.",
+      "style_keywords": [
+        "세련됨",
+        "여름밤",
+        "우아함",
+        "외출",
+        "심플함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_black-41-it",
+      "name_kr": "비세토스 레이스업 부츠",
+      "category": "신발",
+      "description": "블랙 비세토스 모노그램의 레이스업 부츠. 견고한 실루엣과 정갈한 패턴이 차분한 가을날의 발걸음과 어울린다.",
+      "style_keywords": [
+        "가을감성",
+        "견고함",
+        "정갈함",
+        "클래식",
+        "차분함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_cognac-36-it",
+      "name_kr": "비세토스 레이스업 부츠",
+      "category": "신발",
+      "description": "코냑 컬러의 비세토스 레이스업 부츠. 따뜻한 색감과 클래식한 라인이 낙엽 지는 거리의 산책을 연상시킨다.",
+      "style_keywords": [
+        "따뜻함",
+        "가을산책",
+        "클래식",
+        "빈티지",
+        "포근함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_cognac-36-it-2",
+      "name_kr": "스웨이드 플랫폼 부츠",
+      "category": "신발",
+      "description": "코냑 컬러의 스웨이드 플랫폼 부츠. 부드러운 질감과 볼륨감 있는 실루엣이 자유분방한 겨울 나들이와 잘 어울린다.",
+      "style_keywords": [
+        "자유분방",
+        "겨울나들이",
+        "포근함",
+        "개성",
+        "볼드함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_cognac-36-it-3",
+      "name_kr": "비세토스 플랫폼 샌들",
+      "category": "신발",
+      "description": "코냑 컬러의 비세토스 플랫폼 샌들. 화사한 패턴과 안정적인 굽이 여름 축제나 활기찬 나들이의 순간을 담는다.",
+      "style_keywords": [
+        "여름축제",
+        "활기참",
+        "화사함",
+        "경쾌함",
+        "자유로움"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_cognac-37-it",
+      "name_kr": "비세토스 크로스 샌들",
+      "category": "신발",
+      "description": "코냑 컬러의 비세토스 크로스 샌들. 시원한 스트랩 디자인이 해변가의 여유로운 오후를 떠올리게 한다.",
+      "style_keywords": [
+        "해변",
+        "여유로움",
+        "시원함",
+        "캐주얼",
+        "여름"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_cognac-37-it-2",
+      "name_kr": "비세토스 플립플랍",
+      "category": "신발",
+      "description": "코냑 컬러의 비세토스 플립플랍. 가볍고 편안한 착화감이 휴양지에서의 나른한 오후를 연상시킨다.",
+      "style_keywords": [
+        "휴양지",
+        "편안함",
+        "나른함",
+        "여름",
+        "여유"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_cognac-38-it",
+      "name_kr": "비세토스 버클 슬라이드",
+      "category": "신발",
+      "description": "코냑 컬러의 비세토스 버클 슬라이드. 심플한 디자인과 실용적인 버클 디테일이 편안한 일상 속 산책과 어울린다.",
+      "style_keywords": [
+        "편안함",
+        "일상",
+        "심플함",
+        "실용성",
+        "여유"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_skywander-black-36-it",
+      "name_kr": "스카이완더 스니커즈",
+      "category": "신발",
+      "description": "블랙 컬러의 스카이완더 스니커즈. 가볍고 역동적인 디자인이 활기찬 도시 산책이나 새로운 시작의 발걸음과 잘 맞는다.",
+      "style_keywords": [
+        "역동적",
+        "활기참",
+        "새로운시작",
+        "도시적",
+        "경쾌함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_diamante-black-40-it",
+      "name_kr": "디아만테 스니커즈",
+      "category": "신발",
+      "description": "블랙 컬러의 디아만테 스니커즈. 세련되고 볼드한 실루엣이 자신감 넘치는 특별한 하루를 완성한다.",
+      "style_keywords": [
+        "볼드함",
+        "세련됨",
+        "자신감",
+        "모던",
+        "개성"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_diamante-cognac-38-it",
+      "name_kr": "디아만테 비세토스 스니커즈",
+      "category": "신발",
+      "description": "반짝이는 코냑빛 비세토스 모노그램이 스니커즈 위에서 은은한 광채를 낸다. 캐주얼한 하루에도 특별함을 더하고 싶은 나들이길과 잘 어울린다.",
+      "style_keywords": [
+        "세련된 캐주얼",
+        "은은한 반짝임",
+        "나들이",
+        "자신감",
+        "데일리 포인트"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_federlite-black-36-it",
+      "name_kr": "페더라이트 스니커즈",
+      "category": "신발",
+      "description": "가벼운 무게감의 블랙 스니커즈가 발걸음을 한결 경쾌하게 만든다. 분주한 도시의 일상 속 편안한 이동을 함께한다.",
+      "style_keywords": [
+        "경쾌함",
+        "도시적",
+        "실용적",
+        "편안한 하루",
+        "무심한 세련미"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_federlite-cognac-36-it",
+      "name_kr": "페더라이트 스웨이드 스니커즈",
+      "category": "신발",
+      "description": "부드러운 스웨이드 질감의 코냑 컬러가 따뜻한 계절감을 전한다. 여유로운 주말 산책이나 카페 나들이에 어울리는 편안함이다.",
+      "style_keywords": [
+        "따뜻한 감성",
+        "주말 산책",
+        "포근함",
+        "캐주얼",
+        "가을빛"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_federlite-multi-36-it",
+      "name_kr": "페더라이트 스니커즈",
+      "category": "신발",
+      "description": "멀티 컬러가 어우러진 스니커즈는 발랄한 무드를 더한다. 활기찬 하루를 시작하고 싶은 아침과 잘 맞는다.",
+      "style_keywords": [
+        "발랄함",
+        "경쾌함",
+        "활기찬 하루",
+        "캐주얼",
+        "컬러풀"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_mcm-x-we-the-best-ceramic-41-it",
+      "name_kr": "MCM X 위 더 베스트 슬라이드",
+      "category": "신발",
+      "description": "세라믹 톤의 슬라이드가 미니멀하면서도 힙한 감각을 담아낸다. 휴양지에서의 릴렉스한 순간이나 캐주얼한 여름날과 어울린다.",
+      "style_keywords": [
+        "릴렉스",
+        "힙한 무드",
+        "휴양지",
+        "여름",
+        "미니멀"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_mcm-x-we-the-best-taupe-grey-36-it",
+      "name_kr": "MCM X 위 더 베스트 스웨이드 슬라이드",
+      "category": "신발",
+      "description": "토프 그레이 스웨이드 슬라이드가 차분하면서도 트렌디한 분위기를 만든다. 느긋한 오후의 휴식과 잘 어울리는 아이템이다.",
+      "style_keywords": [
+        "차분함",
+        "트렌디",
+        "휴식",
+        "여유로운 오후",
+        "무심한 매력"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_neo-terrain-black-white-40-it",
+      "name_kr": "네오 테레인 스니커즈",
+      "category": "신발",
+      "description": "블랙과 화이트의 대비가 또렷한 네오 테레인 스니커즈는 활동적인 무드를 자아낸다. 야외 활동이나 자유로운 이동이 많은 날에 제격이다.",
+      "style_keywords": [
+        "액티브",
+        "대비되는 매력",
+        "자유로움",
+        "야외활동",
+        "도시적 감각"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_skywander-cognac-36-it",
+      "name_kr": "스카이완더 비세토스 스니커즈",
+      "category": "신발",
+      "description": "코냑빛 비세토스 모노그램이 스카이완더 라인 특유의 가벼운 실루엣과 만난다. 발걸음 가볍게 떠나는 짧은 여행길을 떠올리게 한다.",
+      "style_keywords": [
+        "여행길",
+        "가벼운 발걸음",
+        "클래식 무드",
+        "포근함",
+        "이동의 설렘"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "shoes_skywander-silver-37-it",
+      "name_kr": "스카이완더 패딩 부츠",
+      "category": "신발",
+      "description": "실버 톤의 패딩 부츠가 차가운 계절 속에서도 세련된 존재감을 드러낸다. 겨울철 도심 산책이나 특별한 외출과 잘 어울린다.",
+      "style_keywords": [
+        "겨울 감성",
+        "도심 산책",
+        "세련됨",
+        "포근함",
+        "존재감"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_beige-38-it",
+      "name_kr": "코튼 트렌치 코트",
+      "category": "자켓",
+      "description": "베이지 톤의 코튼 트렌치 코트가 클래식하면서도 정갈한 분위기를 만든다. 선선한 계절의 출근길이나 약속 있는 오후와 잘 어울린다.",
+      "style_keywords": [
+        "클래식",
+        "정갈함",
+        "출근길",
+        "가을감성",
+        "단정함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_black-40-it",
+      "name_kr": "턱시도 블레이저",
+      "category": "자켓",
+      "description": "블랙 턱시도 블레이저는 격식 있는 자리에서 빛나는 존재감을 발한다. 특별한 저녁 자리나 중요한 순간을 함께하기 좋다.",
+      "style_keywords": [
+        "격식",
+        "우아함",
+        "특별한 저녁",
+        "존재감",
+        "세련됨"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_black-m",
+      "name_kr": "트위드 베스트",
+      "category": "자켓",
+      "description": "블랙 트위드 베스트가 클래식한 텍스처로 은은한 품격을 더한다. 레이어드하기 좋은 날의 나들이와 잘 어울린다.",
+      "style_keywords": [
+        "클래식",
+        "품격",
+        "레이어드",
+        "가을감성",
+        "단정함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_black-m-2",
+      "name_kr": "패딩 베스트",
+      "category": "자켓",
+      "description": "블랙 패딩 베스트가 실용적이면서도 도시적인 무드를 만든다. 쌀쌀한 날씨 속 활동적인 하루와 어울린다.",
+      "style_keywords": [
+        "실용적",
+        "도시적",
+        "활동적",
+        "캐주얼",
+        "겨울감성"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_cognac-46-it",
+      "name_kr": "레더 바이커 자켓",
+      "category": "자켓",
+      "description": "코냑빛 레더 바이커 자켓은 강렬하면서도 자유로운 분위기를 자아낸다. 거침없는 라이딩이나 개성 있는 저녁 외출과 잘 어울린다.",
+      "style_keywords": [
+        "자유분방",
+        "강렬함",
+        "개성",
+        "라이딩무드",
+        "자신감"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_cognac-l",
+      "name_kr": "비세토스 모노그램 패딩 자켓",
+      "category": "자켓",
+      "description": "코냑 컬러 비세토스 모노그램 패딩 자켓이 클래식한 헤리티지 무드를 담는다. 추운 날 따뜻하게 감싸는 겨울 나들이에 어울린다.",
+      "style_keywords": [
+        "헤리티지",
+        "따뜻함",
+        "겨울나들이",
+        "클래식",
+        "포근함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_cognac-m",
+      "name_kr": "모노그램 테디 플리스 자켓",
+      "category": "자켓",
+      "description": "모노그램 테디 플리스 자켓이 포근한 촉감으로 아늑한 분위기를 만든다. 느긋한 주말 오후나 캠퍼스 데일리룩과 잘 어울린다.",
+      "style_keywords": [
+        "아늑함",
+        "포근함",
+        "주말무드",
+        "캐주얼",
+        "편안함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_denim-blue-40-it",
+      "name_kr": "데님 셔츠 자켓",
+      "category": "자켓",
+      "description": "데님 블루 셔츠 자켓이 캐주얼하면서도 클린한 무드를 만든다. 산뜻한 봄날의 데일리룩과 잘 어울린다.",
+      "style_keywords": [
+        "캐주얼",
+        "클린함",
+        "봄무드",
+        "데일리",
+        "산뜻함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_econyl-beige-s",
+      "name_kr": "에코닐 나일론 에비에이터 자켓",
+      "category": "자켓",
+      "description": "베이지 톤 에코닐 나일론 에비에이터 자켓이 실용적이면서도 미래지향적인 감각을 담는다. 활동적인 하루를 준비하는 아침과 잘 어울린다.",
+      "style_keywords": [
+        "실용적",
+        "미래지향적",
+        "활동적",
+        "아침무드",
+        "캐주얼"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_econyl-black-l",
+      "name_kr": "에코닐 모노그램 윈드브레이커",
+      "category": "자켓",
+      "description": "블랙 모노그램 윈드브레이커가 스포티하면서도 도시적인 실루엣을 만든다. 가볍게 나서는 러닝이나 야외 이동에 잘 어울린다.",
+      "style_keywords": [
+        "스포티",
+        "도시적",
+        "가벼움",
+        "야외활동",
+        "캐주얼"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_econyl-cognac-l",
+      "name_kr": "에코닐 모노그램 후드 윈드브레이커",
+      "category": "자켓",
+      "description": "코냑 컬러 모노그램 후드 윈드브레이커가 따뜻한 색감과 기능성을 함께 담는다. 선선한 날씨의 야외 산책과 잘 어울린다.",
+      "style_keywords": [
+        "기능성",
+        "따뜻한 색감",
+        "산책",
+        "캐주얼",
+        "가을무드"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_econyl-soft-pink-m",
+      "name_kr": "에코닐 모노그램 후드 윈드브레이커",
+      "category": "자켓",
+      "description": "소프트 핑크 톤의 모노그램 후드 윈드브레이커가 부드럽고 사랑스러운 무드를 담는다. 봄날의 가벼운 외출과 잘 어울린다.",
+      "style_keywords": [
+        "사랑스러움",
+        "부드러움",
+        "봄무드",
+        "가벼운 외출",
+        "캐주얼"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_khaki-l",
+      "name_kr": "트랙 자켓",
+      "category": "자켓",
+      "description": "카키 톤의 트랙 자켓이 편안하면서도 스포티한 분위기를 만든다. 활동적인 주말이나 가벼운 운동 후 나들이에 어울린다.",
+      "style_keywords": [
+        "스포티",
+        "편안함",
+        "주말무드",
+        "활동적",
+        "캐주얼"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_light-denim-40-it",
+      "name_kr": "벨티드 데님 자켓",
+      "category": "자켓",
+      "description": "라이트 데님 톤의 벨티드 자켓이 경쾌하고 산뜻한 무드를 자아낸다. 화창한 날의 나들이나 가벼운 데이트룩과 잘 어울린다.",
+      "style_keywords": [
+        "경쾌함",
+        "산뜻함",
+        "나들이",
+        "데이트룩",
+        "봄여름무드"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_navy-blazer-38-it",
+      "name_kr": "파이핑 블레이저",
+      "category": "자켓",
+      "description": "네이비 톤의 파이핑 블레이저가 단정하면서도 세련된 분위기를 만든다. 중요한 미팅이나 격식 있는 자리와 잘 어울린다.",
+      "style_keywords": [
+        "단정함",
+        "세련됨",
+        "격식",
+        "미팅룩",
+        "클래식"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_navy-blazer-l",
+      "name_kr": "비세토스 바시티 자켓",
+      "category": "자켓",
+      "description": "네이비 컬러의 비세토스 바시티 자켓은 클래식하면서도 스포티한 감성을 담고 있다. 캠퍼스의 활기찬 추억이나 친구들과 함께한 자유로운 시절을 떠올리게 한다.",
+      "style_keywords": [
+        "캠퍼스",
+        "청춘",
+        "활기참",
+        "클래식",
+        "자유로움"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_soft-pink-40-it",
+      "name_kr": "데님 트러커 자켓",
+      "category": "자켓",
+      "description": "소프트 핑크 데님 트러커 자켓은 부드럽고 사랑스러운 무드를 전한다. 봄날의 산책이나 설레는 첫 만남처럼 포근한 순간에 잘 어울린다.",
+      "style_keywords": [
+        "설렘",
+        "봄날",
+        "포근함",
+        "사랑스러움",
+        "산책"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "jacket_m-nchen-black-and-white-l",
+      "name_kr": "뮌헨 바시티 자켓",
+      "category": "자켓",
+      "description": "블랙과 화이트의 대비가 인상적인 뮌헨 바시티 자켓은 도시적이면서도 개성 있는 분위기를 자아낸다. 특별한 이벤트나 자신만의 스타일을 뽐내고 싶은 날에 어울린다.",
+      "style_keywords": [
+        "개성",
+        "도시적",
+        "대비",
+        "자신감",
+        "특별한날"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_black-l",
+      "name_kr": "모노그램 티셔츠",
+      "category": "티셔츠",
+      "description": "블랙 모노그램 티셔츠는 심플하면서도 브랜드의 정체성을 담은 데일리 아이템이다. 꾸미지 않은 듯 세련된 평범한 하루와 잘 어울린다.",
+      "style_keywords": [
+        "데일리",
+        "심플함",
+        "세련됨",
+        "일상",
+        "편안함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_black-m",
+      "name_kr": "비세토스 포켓 티셔츠",
+      "category": "티셔츠",
+      "description": "비세토스 패턴이 포인트가 된 블랙 포켓 티셔츠는 캐주얼한 감성을 더한다. 가볍게 나선 산책이나 여유로운 오후에 어울리는 아이템이다.",
+      "style_keywords": [
+        "캐주얼",
+        "여유",
+        "가벼움",
+        "오후",
+        "산책"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_cognac-l",
+      "name_kr": "비세토스 패널 티셔츠",
+      "category": "티셔츠",
+      "description": "코냑 컬러의 비세토스 패널 티셔츠는 따뜻한 색감으로 편안한 분위기를 전한다. 가을날의 나른한 오후나 소소한 만남에 잘 어울린다.",
+      "style_keywords": [
+        "따뜻함",
+        "가을",
+        "나른함",
+        "편안함",
+        "소소함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_cognac-s",
+      "name_kr": "로렐 로고 티셔츠",
+      "category": "티셔츠",
+      "description": "코냑 컬러의 로렐 로고 티셔츠는 클래식한 무드에 은은한 포인트를 더한다. 오래된 친구를 만나는 편안한 자리에 어울린다.",
+      "style_keywords": [
+        "클래식",
+        "은은함",
+        "편안함",
+        "우정",
+        "클래식무드"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_econyl-soft-pink-s",
+      "name_kr": "크롭 티셔츠",
+      "category": "티셔츠",
+      "description": "소프트 핑크의 크롭 티셔츠는 발랄하고 경쾌한 분위기를 담고 있다. 여름날의 즐거운 외출이나 친구들과의 나들이에 잘 어울린다.",
+      "style_keywords": [
+        "발랄함",
+        "경쾌함",
+        "여름",
+        "나들이",
+        "즐거움"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_white-l",
+      "name_kr": "비세토스 밴드 크롭 티셔츠",
+      "category": "티셔츠",
+      "description": "화이트 비세토스 밴드 크롭 티셔츠는 깔끔하고 산뜻한 느낌을 준다. 상쾌한 아침이나 활동적인 하루의 시작에 어울린다.",
+      "style_keywords": [
+        "산뜻함",
+        "깔끔함",
+        "아침",
+        "활동적",
+        "상쾌함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_white-l-2",
+      "name_kr": "그래픽 티셔츠",
+      "category": "티셔츠",
+      "description": "화이트 그래픽 티셔츠는 캐주얼하면서도 개성 있는 무드를 전한다. 자유로운 주말이나 편안한 친구 모임에 어울린다.",
+      "style_keywords": [
+        "캐주얼",
+        "개성",
+        "주말",
+        "자유로움",
+        "편안함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_mcm-x-ateez-with-mingi-black-l",
+      "name_kr": "MCM X ATEEZ 로고 티셔츠",
+      "category": "티셔츠",
+      "description": "MCM X ATEEZ 컬래버레이션 블랙 로고 티셔츠는 팬심과 스타일을 함께 담은 특별한 아이템이다. 좋아하는 아티스트와 함께한 소중한 순간을 기념하고 싶은 날에 어울린다.",
+      "style_keywords": [
+        "팬심",
+        "특별함",
+        "컬래버",
+        "추억",
+        "설렘"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_mcm-x-we-the-best-black-l",
+      "name_kr": "MCM X 위 더 베스트 로고 티셔츠",
+      "category": "티셔츠",
+      "description": "MCM X 위 더 베스트 블랙 로고 티셔츠는 강렬한 에너지와 자신감을 담고 있다. 활력 넘치는 하루나 자신을 드러내고 싶은 순간에 어울린다.",
+      "style_keywords": [
+        "강렬함",
+        "자신감",
+        "에너지",
+        "개성",
+        "힘있음"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "tshirt_mcm-x-we-the-best-off-white-l",
+      "name_kr": "MCM X 위 더 베스트 로고 티셔츠",
+      "category": "티셔츠",
+      "description": "오프 화이트 톤의 위 더 베스트 로고 티셔츠는 편안하면서도 세련된 스트리트 무드를 전한다. 캐주얼한 만남이나 자유로운 일상에 잘 어울린다.",
+      "style_keywords": [
+        "스트리트",
+        "편안함",
+        "세련됨",
+        "캐주얼",
+        "일상"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_beige-m",
+      "name_kr": "코튼 카고 팬츠",
+      "category": "팬츠",
+      "description": "베이지 코튼 카고 팬츠는 실용적이면서도 편안한 무드를 담고 있다. 활동적인 나들이나 여유로운 주말 오후에 잘 어울린다.",
+      "style_keywords": [
+        "실용적",
+        "편안함",
+        "주말",
+        "나들이",
+        "여유"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_black-40-it",
+      "name_kr": "레더 쇼츠",
+      "category": "팬츠",
+      "description": "블랙 레더 쇼츠는 강렬하고 도회적인 분위기를 자아낸다. 늦은 밤 도시의 조명 아래 특별한 외출에 어울린다.",
+      "style_keywords": [
+        "강렬함",
+        "도회적",
+        "밤",
+        "특별함",
+        "섹시함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_econyl-black-l",
+      "name_kr": "에코닐 모노그램 나일론 팬츠",
+      "category": "팬츠",
+      "description": "블랙 에코닐 모노그램 나일론 팬츠는 스포티하면서도 도시적인 감성을 담고 있다. 활기찬 야외 활동이나 캐주얼한 외출에 잘 어울린다.",
+      "style_keywords": [
+        "스포티",
+        "도시적",
+        "활기참",
+        "캐주얼",
+        "야외활동"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_indigo-38-it",
+      "name_kr": "데님 팬츠",
+      "category": "팬츠",
+      "description": "인디고 데님 팬츠는 시간이 지나도 변치 않는 편안한 감성을 담고 있다. 익숙한 일상이나 오랜 친구와의 만남에 어울린다.",
+      "style_keywords": [
+        "편안함",
+        "일상",
+        "친숙함",
+        "클래식",
+        "데님무드"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_light-denim-38-it",
+      "name_kr": "와이드 데님 팬츠",
+      "category": "팬츠",
+      "description": "라이트 데님의 와이드 팬츠는 여유롭고 자유로운 실루엣을 담고 있다. 캐주얼한 데이트나 산뜻한 봄날 외출에 어울린다.",
+      "style_keywords": [
+        "여유로움",
+        "자유로움",
+        "봄날",
+        "캐주얼",
+        "산뜻함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_navy-blazer-40-it",
+      "name_kr": "테일러드 팬츠",
+      "category": "팬츠",
+      "description": "네이비 테일러드 팬츠는 단정하고 세련된 무드를 담고 있다. 중요한 미팅이나 정갈한 오피스룩이 필요한 날에 어울린다.",
+      "style_keywords": [
+        "단정함",
+        "세련됨",
+        "오피스",
+        "정갈함",
+        "프로페셔널"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_orangeade-40-it",
+      "name_kr": "모노그램 프린트 팬츠",
+      "category": "팬츠",
+      "description": "오렌지에이드 컬러의 모노그램 프린트 팬츠는 발랄하고 생기 넘치는 분위기를 전한다. 여름날의 활기찬 외출이나 개성을 드러내고 싶은 날에 어울린다.",
+      "style_keywords": [
+        "발랄함",
+        "생기",
+        "여름",
+        "개성",
+        "활기참"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_soft-pink-40-it",
+      "name_kr": "핑크 데님 팬츠",
+      "category": "팬츠",
+      "description": "소프트 핑크 데님 팬츠는 사랑스럽고 부드러운 무드를 담고 있다. 봄날의 데이트나 설레는 만남에 잘 어울린다.",
+      "style_keywords": [
+        "사랑스러움",
+        "부드러움",
+        "봄날",
+        "설렘",
+        "데이트"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_mcm-x-we-the-best-off-white-l",
+      "name_kr": "MCM X 위 더 베스트 메시 쇼츠",
+      "category": "팬츠",
+      "description": "오프 화이트 톤의 위 더 베스트 메시 쇼츠는 시원하고 스포티한 감성을 전한다. 활동적인 여름날이나 편안한 운동 후 시간에 어울린다.",
+      "style_keywords": [
+        "스포티",
+        "시원함",
+        "여름",
+        "활동적",
+        "편안함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "pants_mcm-x-we-the-best-taupe-grey-l",
+      "name_kr": "MCM X 위 더 베스트 쇼츠",
+      "category": "팬츠",
+      "description": "토프 그레이의 위 더 베스트 쇼츠는 차분하면서도 캐주얼한 무드를 담고 있다. 편안한 일상이나 가벼운 외출에 잘 어울린다.",
+      "style_keywords": [
+        "차분함",
+        "캐주얼",
+        "편안함",
+        "일상",
+        "가벼움"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "hoodie_black-l",
+      "name_kr": "로고 후디",
+      "category": "후드티",
+      "description": "블랙 로고 후디는 편안하면서도 도시적인 감성을 담고 있다. 나른한 주말이나 혼자만의 여유로운 시간에 어울린다.",
+      "style_keywords": [
+        "편안함",
+        "도시적",
+        "주말",
+        "여유",
+        "나른함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "hoodie_black-l-2",
+      "name_kr": "로렐 로고 후디",
+      "category": "후드티",
+      "description": "블랙 바탕에 새겨진 로렐 로고가 차분한 존재감을 더하는 후디. 특별히 꾸미지 않아도 멋스러운 나만의 휴일 오후와 잘 어울린다.",
+      "style_keywords": [
+        "편안함",
+        "여유로운 주말",
+        "무심한 멋",
+        "일상",
+        "차분함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "hoodie_cognac-l",
+      "name_kr": "비세토스 후드 라이닝 후디",
+      "category": "후드티",
+      "description": "따뜻한 코냑 컬러와 비세토스 라이닝이 은은하게 드러나는 후디. 선선한 바람이 불기 시작하는 계절, 포근했던 기억을 떠올리게 한다.",
+      "style_keywords": [
+        "포근함",
+        "가을감성",
+        "따뜻한기억",
+        "캐주얼",
+        "안정감"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "hoodie_khaki-l",
+      "name_kr": "비세토스 후드 라이닝 후디",
+      "category": "후드티",
+      "description": "카키 톤의 차분한 무드에 비세토스 라이닝이 포인트를 주는 후디. 자연 속을 걷던 여유로운 시간이나 소박한 나들이의 순간과 닮아있다.",
+      "style_keywords": [
+        "자연친화",
+        "여유",
+        "소박함",
+        "나들이",
+        "무심한스타일"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-jacket_econyl-cognac-m",
+      "name_kr": "에코닐 비세토스 유틸리티 베스트",
+      "category": "자켓/코트",
+      "description": "에코닐 소재와 코냑 컬러의 비세토스 패턴이 실용적인 유틸리티 무드를 완성하는 베스트. 활동적인 하루를 보내는 이들의 야외 일정과 잘 어울린다.",
+      "style_keywords": [
+        "실용적",
+        "액티브",
+        "야외활동",
+        "지속가능",
+        "모던"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-jacket_econyl-dark-navy-m",
+      "name_kr": "에코닐 나일론 후드 윈드브레이커",
+      "category": "자켓/코트",
+      "description": "다크 네이비 컬러의 에코닐 나일론 윈드브레이커가 도시적인 기능미를 담아낸다. 바람을 가르며 걷던 늦은 저녁의 산책길을 떠오르게 한다.",
+      "style_keywords": [
+        "도시적",
+        "기능성",
+        "산책",
+        "저녁무드",
+        "시크함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-top_black-black-l",
+      "name_kr": "비세토스 포켓 티셔츠",
+      "category": "티셔츠/셔츠",
+      "description": "블랙 톤에 비세토스 패턴 포켓이 은은하게 자리한 티셔츠. 어떤 자리에서도 튀지 않고 자연스럽게 스며드는 담백한 하루와 어울린다.",
+      "style_keywords": [
+        "담백함",
+        "무난함",
+        "데일리룩",
+        "자연스러움",
+        "심플"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-top_black-l",
+      "name_kr": "에센셜 로고 티셔츠",
+      "category": "티셔츠/셔츠",
+      "description": "블랙 베이스에 에센셜 로고가 절제된 존재감을 더하는 티셔츠. 군더더기 없는 스타일을 즐기는 이들의 기본 아이템으로 잘 맞는다.",
+      "style_keywords": [
+        "기본템",
+        "심플함",
+        "절제미",
+        "데일리",
+        "베이직"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-top_black-m",
+      "name_kr": "그래픽 로고 티셔츠",
+      "category": "티셔츠/셔츠",
+      "description": "블랙 컬러 위 그래픽 로고가 캐주얼한 포인트를 주는 티셔츠. 친구들과 편하게 어울리는 캐주얼한 만남의 순간과 닮아있다.",
+      "style_keywords": [
+        "캐주얼",
+        "친근함",
+        "편안함",
+        "모임",
+        "활기"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-top_navy-blazer-m",
+      "name_kr": "에센셜 로고 티셔츠",
+      "category": "티셔츠/셔츠",
+      "description": "네이비 컬러의 차분한 무드에 에센셜 로고가 담긴 티셔츠. 단정하면서도 편안한 인상을 남기고 싶은 순간에 어울린다.",
+      "style_keywords": [
+        "단정함",
+        "차분함",
+        "편안함",
+        "깔끔함",
+        "신뢰감"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-top_white-l",
+      "name_kr": "캐릭터 그래픽 티셔츠",
+      "category": "티셔츠/셔츠",
+      "description": "화이트 바탕에 캐릭터 그래픽이 발랄한 포인트를 더하는 티셔츠. 가볍고 유쾌한 기분으로 하루를 시작하고 싶은 날과 잘 어울린다.",
+      "style_keywords": [
+        "발랄함",
+        "경쾌함",
+        "젊음",
+        "유쾌함",
+        "산뜻함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-top_50-cinnamon-l",
+      "name_kr": "엠블럼 그래픽 티셔츠",
+      "category": "티셔츠/셔츠",
+      "description": "시나몬 컬러에 엠블럼 그래픽이 세련된 포인트를 주는 티셔츠. 따뜻한 색감이 어우러진 가을날의 감성적인 나들이와 어울린다.",
+      "style_keywords": [
+        "가을감성",
+        "따뜻함",
+        "세련됨",
+        "나들이",
+        "포인트룩"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-top_50-navy-blazer-l",
+      "name_kr": "엠블럼 그래픽 티셔츠",
+      "category": "티셔츠/셔츠",
+      "description": "네이비 컬러 위 엠블럼 그래픽이 클래식한 무드를 전하는 티셔츠. 정돈된 느낌을 원하는 스마트 캐주얼 일상에 잘 어울린다.",
+      "style_keywords": [
+        "클래식",
+        "스마트캐주얼",
+        "정돈됨",
+        "단정함",
+        "무드있는"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-pants_black-50-it",
+      "name_kr": "테일러드 팬츠",
+      "category": "팬츠/쇼츠",
+      "description": "블랙 컬러의 테일러드 팬츠가 깔끔한 실루엣을 완성한다. 격식 있는 자리나 중요한 미팅을 앞둔 정갈한 순간과 어울린다.",
+      "style_keywords": [
+        "격식",
+        "정갈함",
+        "깔끔함",
+        "비즈니스",
+        "세련됨"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-pants_black-l",
+      "name_kr": "조거 스웨트팬츠",
+      "category": "팬츠/쇼츠",
+      "description": "블랙 컬러의 조거 스웨트팬츠가 편안한 무드를 자아낸다. 힘을 뺀 하루, 느긋한 휴식의 시간과 자연스럽게 어울린다.",
+      "style_keywords": [
+        "편안함",
+        "휴식",
+        "여유",
+        "캐주얼",
+        "느긋함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-pants_cognac-48-it",
+      "name_kr": "코튼 워크 쇼츠",
+      "category": "팬츠/쇼츠",
+      "description": "코냑 컬러의 코튼 워크 쇼츠가 실용적이면서도 따뜻한 색감을 더한다. 햇살 좋은 날의 가벼운 외출과 잘 어울린다.",
+      "style_keywords": [
+        "실용적",
+        "가벼움",
+        "햇살",
+        "외출",
+        "따뜻함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-pants_dark-grey-48-it",
+      "name_kr": "모노그램 데님 카고 팬츠",
+      "category": "팬츠/쇼츠",
+      "description": "다크 그레이 톤의 모노그램 데님 카고 팬츠가 유니크한 존재감을 더한다. 개성을 드러내고 싶은 자유로운 하루와 어울린다.",
+      "style_keywords": [
+        "개성",
+        "자유로움",
+        "유니크",
+        "스트릿",
+        "존재감"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-pants_econyl-black-l",
+      "name_kr": "에코닐 모노그램 쇼츠",
+      "category": "팬츠/쇼츠",
+      "description": "블랙 컬러에 에코닐 모노그램이 담긴 쇼츠. 가벼운 발걸음으로 향하는 여름날의 활동적인 순간과 잘 어울린다.",
+      "style_keywords": [
+        "여름",
+        "활동적",
+        "가벼움",
+        "지속가능",
+        "시원함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-pants_indigo-46-it",
+      "name_kr": "데님 팬츠",
+      "category": "팬츠/쇼츠",
+      "description": "인디고 컬러의 데님 팬츠가 자연스러운 캐주얼 무드를 완성한다. 편하게 걸치고 나선 익숙한 거리의 산책과 닮아있다.",
+      "style_keywords": [
+        "캐주얼",
+        "자연스러움",
+        "일상",
+        "익숙함",
+        "편안함"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-pants_khaki-48-it",
+      "name_kr": "벨티드 와이드 팬츠",
+      "category": "팬츠/쇼츠",
+      "description": "카키 컬러의 벨티드 와이드 팬츠가 여유로운 실루엣을 자아낸다. 느슨하지만 감각적인 스타일을 즐기는 순간과 어울린다.",
+      "style_keywords": [
+        "여유로움",
+        "감각적",
+        "와이드핏",
+        "릴렉스",
+        "무드있는"
+      ],
+      "price_krw": null,
+      "name_estimated": true
+    },
+    {
+      "product_id": "m-pants_diamond-aw26-sangria-sunset-l",
+      "name_kr": "다이아몬드 프린트 쇼츠",
+      "category": "팬츠/쇼츠",
+      "description": "상그리아 선셋 컬러의 다이아몬드 프린트가 화사한 무드를 전하는 쇼츠. 여름 휴가지의 밝고 경쾌한 순간들과 잘 어울린다.",
+      "style_keywords": [
+        "휴가",
+        "화사함",
+        "경쾌함",
+        "여름",
+        "리조트무드"
+      ],
+      "price_krw": null,
+      "name_estimated": true
     }
   ]
 }

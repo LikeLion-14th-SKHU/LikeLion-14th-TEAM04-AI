@@ -32,7 +32,46 @@ def save_base64_image(data_b64: str) -> Path:
     settings.upload_dir.mkdir(parents=True, exist_ok=True)
     path = settings.upload_dir / f"{uuid.uuid4().hex}{ext}"
     path.write_bytes(data)
+    normalize_exif_rotation(path)
     return path
+
+
+# Claude API 이미지 상한 5MB(base64 전) — 여유를 두고 이 값 초과 시 재압축
+MAX_UPLOAD_BYTES = 4 * 1024 * 1024
+# 분석용으로 충분한 최대 변 길이 (Claude 고해상도 비전 상한 2576px에 맞춤)
+MAX_LONG_EDGE = 2560
+
+
+def normalize_exif_rotation(path: Path) -> None:
+    """폰 사진 정규화: EXIF 회전 적용 + 대형 사진 축소·재압축.
+
+    - EXIF Orientation≠1이면 픽셀에 직접 회전 적용 (모델은 EXIF를 무시할 수 있음)
+    - 5MB 초과 원본은 Claude API가 400으로 거절 → 긴 변 2560px로 축소 후 재압축
+    실패해도 원본 그대로 진행 (치명적 아님 — 단, 대형 사진은 이후 단계에서 실패 가능).
+    """
+    try:
+        from PIL import Image, ImageOps
+
+        needs_resize = path.stat().st_size > MAX_UPLOAD_BYTES
+        with Image.open(path) as im:
+            rotated = im.getexif().get(0x0112, 1) != 1   # Orientation 태그
+            needs_resize = needs_resize or max(im.size) > MAX_LONG_EDGE
+            if not (rotated or needs_resize):
+                return
+            fixed = ImageOps.exif_transpose(im) if rotated else im
+            if max(fixed.size) > MAX_LONG_EDGE:
+                scale = MAX_LONG_EDGE / max(fixed.size)
+                fixed = fixed.resize(
+                    (round(fixed.width * scale), round(fixed.height * scale)),
+                    Image.LANCZOS,
+                )
+            if path.suffix.lower() == ".png":
+                fixed.save(path)
+            else:
+                fixed = fixed.convert("RGB")
+                fixed.save(path, quality=90)
+    except Exception:  # noqa: BLE001
+        pass
 
 
 def storage_url(path: Path) -> str:
