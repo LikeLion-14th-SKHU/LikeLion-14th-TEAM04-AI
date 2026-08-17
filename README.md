@@ -16,9 +16,10 @@
 ```mermaid
 flowchart TD
     subgraph INPUT["사용자 입력"]
-        A["옷 사진 (JPEG/PNG)"]
+        A["옷 사진 (JPEG/PNG)<br/>EXIF 회전·대형 사진 자동 정규화"]
         B["옷 정보 토글<br/>(카테고리·재질·상태)"]
         C["사연 텍스트 (≤500자)"]
+        D["재창조 목표 카테고리 (선택)<br/>미선택 시 AI 자동 제안"]
     end
 
     subgraph PIPELINE["AI 파이프라인 (FastAPI 서버)"]
@@ -41,6 +42,7 @@ flowchart TD
     A --> S1
     B --> S1
     C --> S1
+    D --> S2
     S1 -->|analysis.json| S2
     S2 -->|design_spec × 3| S3
     S3 -->|컨셉 이미지 × 3| GATE
@@ -132,8 +134,14 @@ flowchart TD
 | 방식 | 엔드포인트 | 기준 |
 |---|---|---|
 | **동기** (응답에 결과) | `POST /ai/v1/narrative` · `design-spec` · `concept-image` · `curation` | 수 초~수십 초 내 완료 |
+| **동기** (조회) | `GET /ai/v1/recreation-categories` | 재창조 목표 카테고리 목록 — 프론트 토글용, Brand DB에서 자동 도출 |
 | **비동기** (202 + job_id) | `POST /ai/v1/image-to-3d` · `pipeline-run` | 30초 이상 (3D 변환 등) |
 | 폴링 | `GET /ai/v1/jobs/{job_id}` | `stage`·`detail`을 로딩 UI에 그대로 사용 |
+
+- `pipeline-run`·`design-spec`의 `target_category`(선택)로 재창조 결과 카테고리를 지정할 수 있습니다.
+  목록 밖 값은 job 생성 전에 422로 거절되며, 미지정 시 AI가 사연에 맞는 카테고리를 자동 제안합니다.
+- 업로드 사진은 서버 입구에서 자동 정규화됩니다 — EXIF 회전 적용 + 4MB/2560px 초과 시 축소
+  (폰 원본 사진이 Claude 이미지 상한을 넘겨 실패하는 문제를 실사진 E2E에서 발견·해결).
 
 ### E2E 파이프라인의 상태 머신 (`pipeline-run`)
 
@@ -209,10 +217,10 @@ ai_pipeline/
 │   └── job_store.py         # 인메모리 job 저장소 (⚠️ 워커 1개 전제)
 ├── data/
 │   ├── mcm_brand_assets.json  # 브랜드 디자인 코드 (Stage 2·게이트의 근거)
-│   └── mcm_catalog.json       # 제품 카탈로그 (Stage 5 enum의 원천)
-scripts/                     # run_stage1~5, run_gate — 단계별 실호출 확인용
-tests/                       # 60+ 테스트 — API 키 없이도 로직 검증 가능하게 설계
-data/                        # MCM 제품 이미지 + _index.json (⚠️ 이미지는 git 미포함)
+│   └── mcm_catalog.json       # 제품 카탈로그 104종 — 전 카테고리 (Stage 5 enum의 원천)
+scripts/                     # run_stage1~5, run_gate, run_e2e — 단계별·전체 실호출 확인용
+tests/                       # 70+ 테스트 — API 키 없이도 로직 검증 가능하게 설계
+data/                        # MCM 제품 이미지 113종 + _index.json (⚠️ 이미지는 git 미포함)
 storage/                     # 생성 산출물 (images/ models/ logs/) — git 미포함
 ```
 
