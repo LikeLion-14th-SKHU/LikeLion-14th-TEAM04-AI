@@ -1118,7 +1118,7 @@
   },
   {
     "file": "apparel/m-jacket_econyl-cognac-m.png",
-    "category": "자켓/코트",
+    "category": "자켓",
     "line": "econyl",
     "product_id": "m-jacket_econyl-cognac-m",
     "color": "코냑",
@@ -1130,7 +1130,7 @@
   },
   {
     "file": "apparel/m-jacket_econyl-dark-navy-m.png",
-    "category": "자켓/코트",
+    "category": "자켓",
     "line": "econyl",
     "product_id": "m-jacket_econyl-dark-navy-m",
     "color": "다크 네이비",
@@ -1142,7 +1142,7 @@
   },
   {
     "file": "apparel/m-top_black-black-l.png",
-    "category": "티셔츠/셔츠",
+    "category": "티셔츠",
     "line": null,
     "product_id": "m-top_black-black-l",
     "color": "블랙",
@@ -1154,7 +1154,7 @@
   },
   {
     "file": "apparel/m-top_black-l.png",
-    "category": "티셔츠/셔츠",
+    "category": "티셔츠",
     "line": null,
     "product_id": "m-top_black-l",
     "color": "블랙",
@@ -1166,7 +1166,7 @@
   },
   {
     "file": "apparel/m-top_black-m.png",
-    "category": "티셔츠/셔츠",
+    "category": "티셔츠",
     "line": null,
     "product_id": "m-top_black-m",
     "color": "블랙",
@@ -1178,7 +1178,7 @@
   },
   {
     "file": "apparel/m-top_navy-blazer-m.png",
-    "category": "티셔츠/셔츠",
+    "category": "티셔츠",
     "line": null,
     "product_id": "m-top_navy-blazer-m",
     "color": "네이비",
@@ -1190,7 +1190,7 @@
   },
   {
     "file": "apparel/m-top_white-l.png",
-    "category": "티셔츠/셔츠",
+    "category": "티셔츠",
     "line": null,
     "product_id": "m-top_white-l",
     "color": "화이트",
@@ -1202,7 +1202,7 @@
   },
   {
     "file": "apparel/m-top_50-cinnamon-l.png",
-    "category": "티셔츠/셔츠",
+    "category": "티셔츠",
     "line": null,
     "product_id": "m-top_50-cinnamon-l",
     "color": "시나몬",
@@ -1214,7 +1214,7 @@
   },
   {
     "file": "apparel/m-top_50-navy-blazer-l.png",
-    "category": "티셔츠/셔츠",
+    "category": "티셔츠",
     "line": null,
     "product_id": "m-top_50-navy-blazer-l",
     "color": "네이비",
@@ -1226,7 +1226,7 @@
   },
   {
     "file": "apparel/m-pants_black-50-it.png",
-    "category": "팬츠/쇼츠",
+    "category": "팬츠",
     "line": null,
     "product_id": "m-pants_black-50-it",
     "color": "블랙",
@@ -1238,7 +1238,7 @@
   },
   {
     "file": "apparel/m-pants_black-l.png",
-    "category": "팬츠/쇼츠",
+    "category": "팬츠",
     "line": null,
     "product_id": "m-pants_black-l",
     "color": "블랙",
@@ -1250,7 +1250,7 @@
   },
   {
     "file": "apparel/m-pants_cognac-48-it.png",
-    "category": "팬츠/쇼츠",
+    "category": "팬츠",
     "line": null,
     "product_id": "m-pants_cognac-48-it",
     "color": "코냑",
@@ -1262,7 +1262,7 @@
   },
   {
     "file": "apparel/m-pants_dark-grey-48-it.png",
-    "category": "팬츠/쇼츠",
+    "category": "팬츠",
     "line": null,
     "product_id": "m-pants_dark-grey-48-it",
     "color": "다크 그레이",
@@ -1274,7 +1274,7 @@
   },
   {
     "file": "apparel/m-pants_econyl-black-l.png",
-    "category": "팬츠/쇼츠",
+    "category": "팬츠",
     "line": "econyl",
     "product_id": "m-pants_econyl-black-l",
     "color": "블랙",
@@ -1286,7 +1286,7 @@
   },
   {
     "file": "apparel/m-pants_indigo-46-it.png",
-    "category": "팬츠/쇼츠",
+    "category": "팬츠",
     "line": null,
     "product_id": "m-pants_indigo-46-it",
     "color": "인디고",
@@ -1298,7 +1298,7 @@
   },
   {
     "file": "apparel/m-pants_khaki-48-it.png",
-    "category": "팬츠/쇼츠",
+    "category": "팬츠",
     "line": null,
     "product_id": "m-pants_khaki-48-it",
     "color": "카키",
@@ -1310,7 +1310,7 @@
   },
   {
     "file": "apparel/m-pants_diamond-aw26-sangria-sunset-l.png",
-    "category": "팬츠/쇼츠",
+    "category": "팬츠",
     "line": null,
     "product_id": "m-pants_diamond-aw26-sangria-sunset-l",
     "color": "상그리아 선셋",

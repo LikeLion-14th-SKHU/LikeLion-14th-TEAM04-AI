@@ -79,6 +79,24 @@ def select_references(
     return picked
 
 
+def available_categories() -> list[dict[str, Any]]:
+    """사용자가 지정 가능한 재창조 목표 카테고리 목록 (인덱스에서 도출 — DB가 늘면 자동 확장).
+
+    보유 수량 내림차순. count는 프론트가 "선택지 신뢰도" 표시에 쓸 수 있게 함께 준다.
+    """
+    counts: dict[str, int] = {}
+    for e in load_index():
+        counts[e["category"]] = counts.get(e["category"], 0) + 1
+    return [
+        {"category": c, "count": n}
+        for c, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    ]
+
+
+def is_valid_category(category: str) -> bool:
+    return any(c["category"] == category for c in available_categories())
+
+
 def find_by_product_id(product_id: str) -> dict[str, Any] | None:
     """product_id로 인덱스 항목 조회 (Stage 3가 base_product 레퍼런스 이미지를 찾을 때 사용)."""
     for entry in load_index():

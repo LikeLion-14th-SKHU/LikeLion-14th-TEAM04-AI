@@ -1296,7 +1296,7 @@
     {
       "product_id": "m-jacket_econyl-cognac-m",
       "name_kr": "에코닐 비세토스 유틸리티 베스트",
-      "category": "자켓/코트",
+      "category": "자켓",
       "description": "에코닐 소재와 코냑 컬러의 비세토스 패턴이 실용적인 유틸리티 무드를 완성하는 베스트. 활동적인 하루를 보내는 이들의 야외 일정과 잘 어울린다.",
       "style_keywords": [
         "실용적",
@@ -1311,7 +1311,7 @@
     {
       "product_id": "m-jacket_econyl-dark-navy-m",
       "name_kr": "에코닐 나일론 후드 윈드브레이커",
-      "category": "자켓/코트",
+      "category": "자켓",
       "description": "다크 네이비 컬러의 에코닐 나일론 윈드브레이커가 도시적인 기능미를 담아낸다. 바람을 가르며 걷던 늦은 저녁의 산책길을 떠오르게 한다.",
       "style_keywords": [
         "도시적",
@@ -1326,7 +1326,7 @@
     {
       "product_id": "m-top_black-black-l",
       "name_kr": "비세토스 포켓 티셔츠",
-      "category": "티셔츠/셔츠",
+      "category": "티셔츠",
       "description": "블랙 톤에 비세토스 패턴 포켓이 은은하게 자리한 티셔츠. 어떤 자리에서도 튀지 않고 자연스럽게 스며드는 담백한 하루와 어울린다.",
       "style_keywords": [
         "담백함",
@@ -1341,7 +1341,7 @@
     {
       "product_id": "m-top_black-l",
       "name_kr": "에센셜 로고 티셔츠",
-      "category": "티셔츠/셔츠",
+      "category": "티셔츠",
       "description": "블랙 베이스에 에센셜 로고가 절제된 존재감을 더하는 티셔츠. 군더더기 없는 스타일을 즐기는 이들의 기본 아이템으로 잘 맞는다.",
       "style_keywords": [
         "기본템",
@@ -1356,7 +1356,7 @@
     {
       "product_id": "m-top_black-m",
       "name_kr": "그래픽 로고 티셔츠",
-      "category": "티셔츠/셔츠",
+      "category": "티셔츠",
       "description": "블랙 컬러 위 그래픽 로고가 캐주얼한 포인트를 주는 티셔츠. 친구들과 편하게 어울리는 캐주얼한 만남의 순간과 닮아있다.",
       "style_keywords": [
         "캐주얼",
@@ -1371,7 +1371,7 @@
     {
       "product_id": "m-top_navy-blazer-m",
       "name_kr": "에센셜 로고 티셔츠",
-      "category": "티셔츠/셔츠",
+      "category": "티셔츠",
       "description": "네이비 컬러의 차분한 무드에 에센셜 로고가 담긴 티셔츠. 단정하면서도 편안한 인상을 남기고 싶은 순간에 어울린다.",
       "style_keywords": [
         "단정함",
@@ -1386,7 +1386,7 @@
     {
       "product_id": "m-top_white-l",
       "name_kr": "캐릭터 그래픽 티셔츠",
-      "category": "티셔츠/셔츠",
+      "category": "티셔츠",
       "description": "화이트 바탕에 캐릭터 그래픽이 발랄한 포인트를 더하는 티셔츠. 가볍고 유쾌한 기분으로 하루를 시작하고 싶은 날과 잘 어울린다.",
       "style_keywords": [
         "발랄함",
@@ -1401,7 +1401,7 @@
     {
       "product_id": "m-top_50-cinnamon-l",
       "name_kr": "엠블럼 그래픽 티셔츠",
-      "category": "티셔츠/셔츠",
+      "category": "티셔츠",
       "description": "시나몬 컬러에 엠블럼 그래픽이 세련된 포인트를 주는 티셔츠. 따뜻한 색감이 어우러진 가을날의 감성적인 나들이와 어울린다.",
       "style_keywords": [
         "가을감성",
@@ -1416,7 +1416,7 @@
     {
       "product_id": "m-top_50-navy-blazer-l",
       "name_kr": "엠블럼 그래픽 티셔츠",
-      "category": "티셔츠/셔츠",
+      "category": "티셔츠",
       "description": "네이비 컬러 위 엠블럼 그래픽이 클래식한 무드를 전하는 티셔츠. 정돈된 느낌을 원하는 스마트 캐주얼 일상에 잘 어울린다.",
       "style_keywords": [
         "클래식",
@@ -1431,7 +1431,7 @@
     {
       "product_id": "m-pants_black-50-it",
       "name_kr": "테일러드 팬츠",
-      "category": "팬츠/쇼츠",
+      "category": "팬츠",
       "description": "블랙 컬러의 테일러드 팬츠가 깔끔한 실루엣을 완성한다. 격식 있는 자리나 중요한 미팅을 앞둔 정갈한 순간과 어울린다.",
       "style_keywords": [
         "격식",
@@ -1446,7 +1446,7 @@
     {
       "product_id": "m-pants_black-l",
       "name_kr": "조거 스웨트팬츠",
-      "category": "팬츠/쇼츠",
+      "category": "팬츠",
       "description": "블랙 컬러의 조거 스웨트팬츠가 편안한 무드를 자아낸다. 힘을 뺀 하루, 느긋한 휴식의 시간과 자연스럽게 어울린다.",
       "style_keywords": [
         "편안함",
@@ -1461,7 +1461,7 @@
     {
       "product_id": "m-pants_cognac-48-it",
       "name_kr": "코튼 워크 쇼츠",
-      "category": "팬츠/쇼츠",
+      "category": "팬츠",
       "description": "코냑 컬러의 코튼 워크 쇼츠가 실용적이면서도 따뜻한 색감을 더한다. 햇살 좋은 날의 가벼운 외출과 잘 어울린다.",
       "style_keywords": [
         "실용적",
@@ -1476,7 +1476,7 @@
     {
       "product_id": "m-pants_dark-grey-48-it",
       "name_kr": "모노그램 데님 카고 팬츠",
-      "category": "팬츠/쇼츠",
+      "category": "팬츠",
       "description": "다크 그레이 톤의 모노그램 데님 카고 팬츠가 유니크한 존재감을 더한다. 개성을 드러내고 싶은 자유로운 하루와 어울린다.",
       "style_keywords": [
         "개성",
@@ -1491,7 +1491,7 @@
     {
       "product_id": "m-pants_econyl-black-l",
       "name_kr": "에코닐 모노그램 쇼츠",
-      "category": "팬츠/쇼츠",
+      "category": "팬츠",
       "description": "블랙 컬러에 에코닐 모노그램이 담긴 쇼츠. 가벼운 발걸음으로 향하는 여름날의 활동적인 순간과 잘 어울린다.",
       "style_keywords": [
         "여름",
@@ -1506,7 +1506,7 @@
     {
       "product_id": "m-pants_indigo-46-it",
       "name_kr": "데님 팬츠",
-      "category": "팬츠/쇼츠",
+      "category": "팬츠",
       "description": "인디고 컬러의 데님 팬츠가 자연스러운 캐주얼 무드를 완성한다. 편하게 걸치고 나선 익숙한 거리의 산책과 닮아있다.",
       "style_keywords": [
         "캐주얼",
@@ -1521,7 +1521,7 @@
     {
       "product_id": "m-pants_khaki-48-it",
       "name_kr": "벨티드 와이드 팬츠",
-      "category": "팬츠/쇼츠",
+      "category": "팬츠",
       "description": "카키 컬러의 벨티드 와이드 팬츠가 여유로운 실루엣을 자아낸다. 느슨하지만 감각적인 스타일을 즐기는 순간과 어울린다.",
       "style_keywords": [
         "여유로움",
@@ -1536,7 +1536,7 @@
     {
       "product_id": "m-pants_diamond-aw26-sangria-sunset-l",
       "name_kr": "다이아몬드 프린트 쇼츠",
-      "category": "팬츠/쇼츠",
+      "category": "팬츠",
       "description": "상그리아 선셋 컬러의 다이아몬드 프린트가 화사한 무드를 전하는 쇼츠. 여름 휴가지의 밝고 경쾌한 순간들과 잘 어울린다.",
       "style_keywords": [
         "휴가",

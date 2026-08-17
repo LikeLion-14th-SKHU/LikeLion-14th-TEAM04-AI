@@ -143,6 +143,8 @@ def run_after_selection(job_id: str, selected: GatedConcept) -> None:
              summary="E2E 파이프라인 실행 (비동기 — 후보 제시 후 선택 대기)")
 def pipeline_run(req: PipelineRequest, background: BackgroundTasks) -> JobAccepted:
     load_stage1_analyze()   # stage1 미병합이면 job 만들기 전에 501
+    from ai_pipeline.api.endpoints.stage2 import ensure_valid_category
+    ensure_valid_category(req.target_category)   # 잘못된 카테고리는 job 생성 전에 422
     clothing = save_base64_image(req.image_base64)
     job = store.create(stage="1", detail="파이프라인 시작")
     background.add_task(
