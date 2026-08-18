@@ -32,6 +32,8 @@ def design_code_text() -> str:
     code = load_design_code()
     lines: list[str] = []
     for section, content in code.items():
+        if section.startswith("_"):   # _sources, _meta 등 메타데이터는 프롬프트에 주입하지 않음
+            continue
         lines.append(f"## {section}")
         if isinstance(content, dict):
             for k, v in content.items():

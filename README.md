@@ -134,12 +134,15 @@ flowchart TD
 | 방식 | 엔드포인트 | 기준 |
 |---|---|---|
 | **동기** (응답에 결과) | `POST /ai/v1/narrative` · `design-spec` · `concept-image` · `curation` | 수 초~수십 초 내 완료 |
-| **동기** (조회) | `GET /ai/v1/recreation-categories` | 재창조 목표 카테고리 목록 — 프론트 토글용, Brand DB에서 자동 도출 |
+| **동기** (조회) | `GET /ai/v1/recreation-categories` | 재창조 목표 카테고리 **계층** 목록 (의류/가방/악세사리 × 서브) — 프론트 토글용 |
 | **비동기** (202 + job_id) | `POST /ai/v1/image-to-3d` · `pipeline-run` | 30초 이상 (3D 변환 등) |
 | 폴링 | `GET /ai/v1/jobs/{job_id}` | `stage`·`detail`을 로딩 UI에 그대로 사용 |
 
 - `pipeline-run`·`design-spec`의 `target_category`(선택)로 재창조 결과 카테고리를 지정할 수 있습니다.
-  목록 밖 값은 job 생성 전에 422로 거절되며, 미지정 시 AI가 사연에 맞는 카테고리를 자동 제안합니다.
+  **서브 값**("핸드백", "키링" 등)을 전달하며, 메인·목록 밖 값은 job 생성 전에 422로 거절.
+  미지정 시 AI가 사연에 맞는 카테고리를 자동 제안합니다.
+- **악세사리 서브(벨트·스카프·지갑·키링·헤어밴드)는 레퍼런스-프리 모드**: 제품 레퍼런스 없이
+  브랜드 디자인 코드만으로 MCM 무드를 유지하며 자유 창작합니다 (`base_product: null`).
 - 업로드 사진은 서버 입구에서 자동 정규화됩니다 — EXIF 회전 적용 + 4MB/2560px 초과 시 축소
   (폰 원본 사진이 Claude 이미지 상한을 넘겨 실패하는 문제를 실사진 E2E에서 발견·해결).
 
