@@ -37,7 +37,8 @@ class DesignSpec(BaseModel):
     concept_name: str                       # 후보 카드용 짧은 컨셉명
     category: str                           # MCM 카테고리 (예: "미니 레더백")
     category_reason: str | None             # 자동 제안 모드의 선정 이유 / 지정 모드는 null
-    base_product: str                       # 레퍼런스 product_id (data/_index.json)
+    base_product: str | None                # 레퍼런스 product_id (data/_index.json)
+                                            # — 레퍼런스 없는 악세사리 모드에서만 null 허용
     risk_profile: RiskProfile
     intervention_level: InterventionLevel
     creation_method: str                    # 자유 서술 — 열거형 제한 없음
@@ -57,7 +58,9 @@ def candidate_list_json_schema() -> dict:
     return CandidateList.model_json_schema()
 
 
-def validate_portfolio(result: CandidateList, n_expected: int = 3) -> list[str]:
+def validate_portfolio(
+    result: CandidateList, n_expected: int = 3, allow_null_base: bool = False
+) -> list[str]:
     """스키마로 표현 못 하는 포트폴리오 규칙을 코드로 검증. 위반 목록을 반환(비면 통과).
 
     Structured Outputs가 타입·enum은 보장하므로 여기서는 '구성 규칙'만 본다:
@@ -80,5 +83,7 @@ def validate_portfolio(result: CandidateList, n_expected: int = 3) -> list[str]:
             )
         if not c.applied_elements:
             problems.append(f"'{c.concept_name}': applied_elements가 비어 있음")
+        if c.base_product is None and not allow_null_base:
+            problems.append(f"'{c.concept_name}': base_product가 null (레퍼런스 모드에서는 필수)")
 
     return problems

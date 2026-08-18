@@ -79,22 +79,60 @@ def select_references(
     return picked
 
 
-def available_categories() -> list[dict[str, Any]]:
-    """사용자가 지정 가능한 재창조 목표 카테고리 목록 (인덱스에서 도출 — DB가 늘면 자동 확장).
+# ---------------------------------------------------------------------------
+# 재창조 목표 카테고리 (2026-08-18 팀 확정 — 계층 구조)
+# 서브 값이 인덱스의 category 필드와 1:1 대응한다 (레퍼런스 필터 키).
+# ---------------------------------------------------------------------------
 
-    보유 수량 내림차순. count는 프론트가 "선택지 신뢰도" 표시에 쓸 수 있게 함께 준다.
+RECREATION_TAXONOMY: dict[str, list[str]] = {
+    "의류": ["니트", "가디건", "셔츠", "자켓", "스커트", "후드티", "티셔츠", "팬츠"],
+    "가방": ["핸드백", "토트백", "백팩", "클러치", "트래블"],
+    "악세사리": ["벨트", "스카프", "지갑", "키링", "헤어밴드"],
+}
+
+# 레퍼런스 이미지 없이 생성하는 메인 (제품 사진 대신 디자인 코드 텍스트만으로 MCM 무드 유지)
+REFERENCE_FREE_MAINS: set[str] = {"악세사리"}
+
+
+def available_categories() -> list[dict[str, Any]]:
+    """재창조 목표 카테고리 계층 목록 — [{main, subs: [{sub, count, reference_free}]}].
+
+    count = 해당 서브의 레퍼런스 보유 수 (인덱스에서 집계).
+    reference_free=True인 서브는 보유 0이어도 선택 가능 (AI 자유 생성 + 디자인 코드).
     """
     counts: dict[str, int] = {}
     for e in load_index():
         counts[e["category"]] = counts.get(e["category"], 0) + 1
     return [
-        {"category": c, "count": n}
-        for c, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+        {
+            "main": main,
+            "subs": [
+                {
+                    "sub": sub,
+                    "count": counts.get(sub, 0),
+                    "reference_free": main in REFERENCE_FREE_MAINS,
+                }
+                for sub in subs
+            ],
+        }
+        for main, subs in RECREATION_TAXONOMY.items()
     ]
 
 
+def _all_subs() -> set[str]:
+    return {s for subs in RECREATION_TAXONOMY.values() for s in subs}
+
+
 def is_valid_category(category: str) -> bool:
-    return any(c["category"] == category for c in available_categories())
+    """target_category(서브 값) 검증 — 계층표에 있는 서브만 허용."""
+    return category in _all_subs()
+
+
+def is_reference_free(category: str) -> bool:
+    """레퍼런스 없이 생성하는 카테고리인가 (악세사리 서브)."""
+    return any(
+        category in RECREATION_TAXONOMY[m] for m in REFERENCE_FREE_MAINS
+    )
 
 
 def find_by_product_id(product_id: str) -> dict[str, Any] | None:

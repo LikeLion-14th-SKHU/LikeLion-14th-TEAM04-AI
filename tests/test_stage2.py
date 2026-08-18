@@ -1,4 +1,4 @@
-"""Stage 2 검증 수트.
+﻿"""Stage 2 검증 수트.
 
 - 단위 테스트: API 키 없이 실행 가능 (스키마·레퍼런스 선별·프롬프트 조립·포트폴리오 검증)
 - 스모크 테스트: ANTHROPIC_API_KEY가 있을 때만 실호출 1회
@@ -114,15 +114,15 @@ def test_validate_portfolio_catches_violations():
 # ---------------------------------------------------------------------------
 
 FAKE_INDEX = [
-    {"file": "bag/a.png", "category": "가방", "line": "aren", "product_id": "a", "color": "블랙", "angle": "front", "source": "s"},
-    {"file": "bag/b.png", "category": "가방", "line": "aren", "product_id": "b", "color": "핑크", "angle": "front", "source": "s"},
-    {"file": "bag/c.png", "category": "가방", "line": "stark", "product_id": "c", "color": "블랙", "angle": "front", "source": "s"},
+    {"file": "bag/a.png", "category": "핸드백", "line": "aren", "product_id": "a", "color": "블랙", "angle": "front", "source": "s"},
+    {"file": "bag/b.png", "category": "핸드백", "line": "aren", "product_id": "b", "color": "핑크", "angle": "front", "source": "s"},
+    {"file": "bag/c.png", "category": "핸드백", "line": "stark", "product_id": "c", "color": "블랙", "angle": "front", "source": "s"},
     {"file": "wallet/d.png", "category": "지갑", "line": "tracy", "product_id": "d", "color": "코냑", "angle": "front", "source": "s"},
 ]
 
 
 def test_select_references_prefers_line_diversity():
-    picked = brand_assets.select_references(category="가방", k=2, index=FAKE_INDEX)
+    picked = brand_assets.select_references(category="핸드백", k=2, index=FAKE_INDEX)
     lines = [e["line"] for e in picked]
     assert len(picked) == 2
     assert len(set(lines)) == 2, "같은 라인만 뽑히면 안 됨"
@@ -136,7 +136,7 @@ def test_select_references_category_filter():
 
 def test_select_references_real_index_loads():
     """실제 data/_index.json과의 통합 — 경로 정합성은 test_asset_index에서 별도 검증."""
-    picked = brand_assets.select_references(category="가방", k=3)
+    picked = brand_assets.select_references(category="핸드백", k=3)
     assert len(picked) == 3
     assert len({e["line"] for e in picked}) == 3
 
@@ -167,7 +167,7 @@ def test_system_blocks_cache_and_content():
 
 
 def test_user_content_fixed_vs_auto_mode(sample_analysis):
-    refs = brand_assets.select_references(category="가방", k=2)
+    refs = brand_assets.select_references(category="핸드백", k=2)
 
     fixed = build_user_content(sample_analysis, "미니 레더백", refs)
     auto = build_user_content(sample_analysis, None, refs)
@@ -183,7 +183,7 @@ def test_user_content_fixed_vs_auto_mode(sample_analysis):
 
 
 def test_user_content_retry_feedback(sample_analysis):
-    refs = brand_assets.select_references(category="가방", k=1)
+    refs = brand_assets.select_references(category="핸드백", k=1)
     content = build_user_content(sample_analysis, None, refs, retry_problems=["risk_profile 중복: ..."])
     text = " ".join(b["text"] for b in content if b["type"] == "text")
     assert "반려 사유" in text

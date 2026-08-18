@@ -69,7 +69,8 @@ def build_inputs(spec: DesignSpec, clothing_image_path: Path) -> tuple[list[dict
         _encode_image(clothing_image_path),
     ]
 
-    ref = brand_assets.find_by_product_id(spec.base_product)
+    # base_product=None: 레퍼런스-프리 모드(악세사리) — 옷 사진 + 프롬프트만으로 생성
+    ref = brand_assets.find_by_product_id(spec.base_product) if spec.base_product else None
     if ref is not None:
         inputs.append(_encode_image(settings.asset_root / ref["file"]))
         return inputs, ref["product_id"]
