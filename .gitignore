@@ -234,3 +234,31 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,java,intellij,windows,visualstudiocode,react
+
+### Project-specific (AI 파트) ###
+
+# 설계 문서 — 로컬 전용, 레포에 올리지 않음
+AI_Dev_PipeLine.md
+DEVELOPMENT_PLAN.md
+
+# Claude Code 로컬 설정
+.claude/
+
+# MCM 브랜드 이미지 — 저작권상 public 레포에 올리지 않음
+# 이미지는 팀 드라이브에서 받아 data/<카테고리>/ 경로에 배치할 것 (경로 목록: data/_index.json)
+data/**/*.png
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.avif
+data/**/*.webp
+
+# 런타임 산출물
+storage/
+.env
+
+### Python ###
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
