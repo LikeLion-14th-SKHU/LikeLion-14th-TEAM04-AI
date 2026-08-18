@@ -23,7 +23,7 @@ story_text = (
 )
 
 user_input = UserInput(
-    category=ClothingCategory(main="의류", sub="셔츠"),
+    category=ClothingCategory(main="상의", sub="셔츠"),
     material="데님",
     story=story_text,
 )

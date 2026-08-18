@@ -40,7 +40,8 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(description="실사진 E2E (pipeline-run → select → done)")
     parser.add_argument("--image", default="storage/uploads/e2e_jacket.jpg")
-    parser.add_argument("--sub", default="자켓", help="서브카테고리 (기본: 자켓)")
+    parser.add_argument("--main", default="아우터", help="메인카테고리 (상의/하의/원피스/아우터)")
+    parser.add_argument("--sub", default="바람막이", help="서브카테고리 (기본: 바람막이)")
     parser.add_argument("--material", default="선택안함")
     parser.add_argument("--story", default=DEFAULT_STORY)
     parser.add_argument("--select", type=int, default=0, help="선택할 후보 인덱스 (기본: 게이트 최고점)")
@@ -54,11 +55,11 @@ def main() -> None:
     b64 = base64.b64encode(image.read_bytes()).decode()
     t0 = time.monotonic()
 
-    print(f"[1/4] POST /ai/v1/pipeline-run — {image.name}, 의류/{args.sub}, {args.material}", flush=True)
+    print(f"[1/4] POST /ai/v1/pipeline-run — {image.name}, {args.main}/{args.sub}, {args.material}", flush=True)
     r = client.post("/ai/v1/pipeline-run", json={
         "image_base64": b64,
         "user_input": {
-            "category": {"main": "의류", "sub": args.sub},
+            "category": {"main": args.main, "sub": args.sub},
             "material": args.material,
             "story": args.story,
         },

@@ -27,7 +27,7 @@ story_text = (
 )
 
 user_input = UserInput(
-    category=ClothingCategory(main="의류", sub="팬츠"),
+    category=ClothingCategory(main="하의", sub="트레이닝팬츠"),
     material="데님",
     condition=["색 바램", "해짐"],
     story=story_text,

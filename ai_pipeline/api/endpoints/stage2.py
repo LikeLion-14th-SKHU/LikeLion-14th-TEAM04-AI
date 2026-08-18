@@ -21,34 +21,42 @@ class DesignSpecRequest(BaseModel):
     target_category: str | None = None   # None이면 AI 자동 제안 모드
 
 
-class CategoryOut(BaseModel):
+class SubCategoryOut(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    category: str
-    count: int                            # 해당 카테고리의 레퍼런스 보유 수
+    sub: str
+    count: int                            # 해당 서브의 레퍼런스 보유 수
+    reference_free: bool                  # True면 레퍼런스 없이 AI 자유 생성 (악세사리)
+
+
+class MainCategoryOut(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    main: str                             # 의류 / 가방 / 악세사리
+    subs: list[SubCategoryOut]
 
 
 class CategoriesResponse(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    categories: list[CategoryOut]         # 보유 수량 내림차순
+    categories: list[MainCategoryOut]
 
 
 def ensure_valid_category(target_category: str | None) -> None:
-    """target_category 검증 공용 헬퍼 — 목록 밖 값이면 422 (pipeline-run에서도 사용)."""
+    """target_category(서브 값) 검증 공용 헬퍼 — 목록 밖 값이면 422 (pipeline-run에서도 사용)."""
     if target_category is not None and not brand_assets.is_valid_category(target_category):
-        allowed = [c["category"] for c in brand_assets.available_categories()]
+        allowed = {m: subs for m, subs in brand_assets.RECREATION_TAXONOMY.items()}
         raise HTTPException(
             status_code=422,
-            detail=f"지원하지 않는 재창조 카테고리: '{target_category}' (허용: {allowed})",
+            detail=f"지원하지 않는 재창조 카테고리: '{target_category}' (허용 서브: {allowed})",
         )
 
 
 @router.get("/recreation-categories", response_model=CategoriesResponse,
-            summary="재창조 목표 카테고리 목록 (프론트 토글용 — DB에서 자동 도출)")
+            summary="재창조 목표 카테고리 계층 목록 (프론트 토글용 — 메인 3종 × 서브)")
 def recreation_categories() -> CategoriesResponse:
     return CategoriesResponse(
-        categories=[CategoryOut(**c) for c in brand_assets.available_categories()]
+        categories=[MainCategoryOut(**m) for m in brand_assets.available_categories()]
     )
 
 

@@ -123,7 +123,7 @@ def test_narrative_before_merge_returns_501_or_works(sample_analysis):
         json={
             "image_base64": TINY_JPEG_B64,
             "user_input": {
-                "category": {"main": "의류", "sub": "셔츠"},
+                "category": {"main": "상의", "sub": "셔츠"},
                 "material": "데님",
                 "condition": ["해짐"],
                 "story": "아버지의 셔츠",
@@ -186,7 +186,7 @@ def _pipeline_payload() -> dict:
     return {
         "image_base64": TINY_JPEG_B64,
         "user_input": {
-            "category": {"main": "의류", "sub": "셔츠"},
+            "category": {"main": "상의", "sub": "셔츠"},
             "material": "데님",
             "condition": ["해짐"],
             "story": "아버지의 셔츠",
