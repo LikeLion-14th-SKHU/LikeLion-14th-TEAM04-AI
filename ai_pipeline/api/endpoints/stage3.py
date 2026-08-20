@@ -36,9 +36,9 @@ class GatedCandidateOut(BaseModel):
 class ConceptImageResponse(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    candidates: list[GatedCandidateOut]   # 점수 내림차순. all_failed=False면 전원 게이트 통과
-    all_failed: bool                      # True면 후보 전원 불합격 상태로 최고점순 제시된 것 (표시 시 참고)
-    regenerated: bool                     # 전원 불합격으로 재생성 1회가 발동했었는가
+    candidates: list[GatedCandidateOut]   # 항상 n장 — 통과 컷(점수순) 먼저, 보충 컷(gate.passed=false)이 뒤
+    all_failed: bool                      # True면 통과 컷 0장 (전원 보충 제시 — 표시 시 참고)
+    regenerated: bool                     # 탈락분 재생성 1회가 발동했었는가
 
 
 def _to_response(outcome: GateOutcome) -> ConceptImageResponse:

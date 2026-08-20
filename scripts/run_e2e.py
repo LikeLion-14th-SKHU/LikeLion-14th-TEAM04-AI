@@ -45,6 +45,7 @@ def main() -> None:
     parser.add_argument("--material", default="선택안함")
     parser.add_argument("--story", default=DEFAULT_STORY)
     parser.add_argument("--select", type=int, default=0, help="선택할 후보 인덱스 (기본: 게이트 최고점)")
+    parser.add_argument("--pro", action="store_true", help="발표용 Pro 이미지 모델 사용 (gemini-3-pro-image)")
     args = parser.parse_args()
 
     image = Path(args.image)
@@ -63,6 +64,7 @@ def main() -> None:
             "material": args.material,
             "story": args.story,
         },
+        "use_pro": args.pro,
     })
     r.raise_for_status()
     job_id = r.json()["job_id"]
