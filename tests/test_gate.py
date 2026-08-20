@@ -118,16 +118,65 @@ def test_gate_concepts_sorts_by_score(monkeypatch, concepts):
     assert [g.gate.score for g in gated] == [95, 70, 40], "점수 내림차순"
 
 
-def test_gate_with_retry_passes_filter(monkeypatch, concepts):
-    """일부 통과 → 통과 컷만 제시, 재생성 없음."""
+def test_gate_with_retry_regenerates_only_failed(monkeypatch, concepts):
+    """일부 탈락 → 탈락분만 재생성 → 통과 시 3장 완성 (크레딧 모델: 항상 n장)."""
+    state = {"round": 0}
+
+    def fake_call(*, messages, **kw):
+        text = messages[0]["content"][0]["text"]
+        if state["round"] == 0:
+            if "(balanced," in text:
+                return {"passed": False, "score": 50, "fail_reasons": ["스펙 미반영"]}
+            return {"passed": True, "score": 88 if "(bold," in text else 80, "fail_reasons": []}
+        return {"passed": True, "score": 75, "fail_reasons": []}
+
+    monkeypatch.setattr(harness_gate.llm_client, "structured_call", fake_call)
+
+    def regenerate(specs):
+        assert len(specs) == 1 and specs[0].risk_profile == "balanced", "탈락분만 재생성해야 함"
+        assert "스펙 미반영" in specs[0].image_prompt, "fail_reasons 피드백 필수"
+        state["round"] = 1
+        return [c for c in concepts if c.spec.risk_profile == "balanced"]
+
+    outcome = harness_gate.gate_with_retry(concepts, regenerate=regenerate)
+    assert outcome.regenerated and not outcome.all_failed
+    assert [g.concept.spec.risk_profile for g in outcome.candidates] == ["bold", "safe", "balanced"]
+    assert all(g.gate.passed for g in outcome.candidates)
+
+
+def test_gate_fills_with_best_failed_when_no_regenerate(monkeypatch, concepts):
+    """재생성 불가(None) → 탈락 컷으로 보충해 항상 3장, passed=false는 유지."""
     _mock_scores(monkeypatch, {
         "safe": {"passed": True, "score": 80, "fail_reasons": []},
         "balanced": {"passed": False, "score": 50, "fail_reasons": ["스펙 미반영"]},
         "bold": {"passed": True, "score": 88, "fail_reasons": []},
     })
-    outcome = harness_gate.gate_with_retry(concepts, regenerate=lambda specs: pytest.fail("재생성되면 안 됨"))
-    assert not outcome.all_failed and not outcome.regenerated
-    assert [g.concept.spec.risk_profile for g in outcome.candidates] == ["bold", "safe"]
+    outcome = harness_gate.gate_with_retry(concepts, regenerate=None)
+    assert len(outcome.candidates) == 3 and not outcome.all_failed and not outcome.regenerated
+    assert [g.concept.spec.risk_profile for g in outcome.candidates] == ["bold", "safe", "balanced"]
+    assert not outcome.candidates[2].gate.passed, "보충 컷은 passed=false 유지"
+
+
+def test_gate_filler_dedupes_profiles(monkeypatch, concepts):
+    """재시도도 탈락 → 같은 프로파일 두 시도 중 최고점 1건만 보충 (동일 컨셉 중복 금지)."""
+    state = {"round": 0}
+
+    def fake_call(*, messages, **kw):
+        text = messages[0]["content"][0]["text"]
+        if "(balanced," in text:
+            return {"passed": False, "score": 60 if state["round"] else 50, "fail_reasons": ["x"]}
+        return {"passed": True, "score": 88 if "(bold," in text else 80, "fail_reasons": []}
+
+    monkeypatch.setattr(harness_gate.llm_client, "structured_call", fake_call)
+
+    def regenerate(specs):
+        state["round"] = 1
+        return [c for c in concepts if c.spec.risk_profile == "balanced"]
+
+    outcome = harness_gate.gate_with_retry(concepts, regenerate=regenerate)
+    profiles = [g.concept.spec.risk_profile for g in outcome.candidates]
+    assert profiles == ["bold", "safe", "balanced"] and len(set(profiles)) == 3
+    assert outcome.candidates[2].gate.score == 60, "두 시도 중 최고점 채택"
 
 
 def test_gate_with_retry_regenerates_once_on_all_fail(monkeypatch, concepts):
