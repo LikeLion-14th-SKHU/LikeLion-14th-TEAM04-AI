@@ -62,7 +62,12 @@ def build_inputs(spec: DesignSpec, clothing_image_path: Path) -> tuple[list[dict
     prompt = (
         f"{spec.image_prompt}\n\n"
         "The first image is the customer's old clothing (source of patterns/fabric/traces). "
-        "The second image, if present, is the MCM base product to be transformed."
+        "The second image, if present, is the MCM base product to be transformed.\n"
+        # 로고 충실도 — 'MOM' 뭉개짐 방지. 하네스가 항상 부착 (LLM 재량에 맡기지 않음)
+        "Brand lettering fidelity: every MCM logo and monogram lettering must read exactly "
+        "as the three letters M-C-M, crisp and undistorted — never 'MOM', 'MCN' or similar "
+        "corruption. Alternating upside-down rows are an authentic Visetos pattern feature "
+        "and are correct; only the letterforms themselves must stay accurate."
     )
     inputs: list[dict] = [
         {"type": "text", "text": prompt},
