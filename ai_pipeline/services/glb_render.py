@@ -71,9 +71,16 @@ def render_front_png(
     # --- 렌더 & 저장 ---
     renderer = pyrender.OffscreenRenderer(size, size)
     try:
-        color, _ = renderer.render(scene, flags=pyrender.RenderFlags.RGBA)
+        color, depth = renderer.render(scene, flags=pyrender.RenderFlags.RGBA)
     finally:
         renderer.delete()
+
+    # OSMesa 백엔드는 RGBA 플래그를 줘도 실제 알파 채널 없이 RGB 3채널만 돌려주는
+    # 경우가 있다(디스플레이·GPU 없는 컨테이너에서 흔함). 그 경우 depth 버퍼로 알파를
+    # 직접 만든다 — 깊이 값이 있는(=뭔가 그려진) 픽셀만 불투명 처리하면 배경이 투명해진다
+    if color.shape[-1] == 3:
+        alpha = np.where(depth > 0, 255, 0).astype(np.uint8)
+        color = np.dstack([color, alpha])
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     Image.fromarray(color, "RGBA").save(out_path)
